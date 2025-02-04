@@ -1,5 +1,12 @@
 baseURL: ""
-languageCode: us
+defaultContentLanguage: pt
+defaultContentLanguageInSubdir: false
+languages:
+  pt:
+    languageCode: pt-BR
+    languageDirection: ltr
+    languageName: Português
+
 title: Notas e Dados
 theme: PaperMod
 

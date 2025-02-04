@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="/css/custom.css"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Estruturas de Controle em Python | Notas e Dados</title>
+<meta name="keywords" content="Python, programação, estruturas de controle">
+<meta name="description" content="Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas.">
+<meta name="author" content="">
+<link rel="canonical" href="/posts/python-estruturas-controle/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="pt" href="/posts/python-estruturas-controle/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/posts/python-estruturas-controle/">
+  <meta property="og:site_name" content="Notas e Dados">
+  <meta property="og:title" content="Estruturas de Controle em Python">
+  <meta property="og:description" content="Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas.">
+  <meta property="og:locale" content="pt-BR">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-04T00:18:49-03:00">
+    <meta property="article:modified_time" content="2025-02-04T00:18:49-03:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Programação">
+    <meta property="article:tag" content="Estruturas De Controle">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Estruturas de Controle em Python">
+<meta name="twitter:description" content="Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Estruturas de Controle em Python",
+      "item": "/posts/python-estruturas-controle/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Estruturas de Controle em Python",
+  "name": "Estruturas de Controle em Python",
+  "description": "Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas.",
+  "keywords": [
+    "Python", "programação", "estruturas de controle"
+  ],
+  "articleBody": "Estruturas de Controle em Python As estruturas de controle em Python permitem controlar o fluxo de execução do programa com base em condições e repetições. Neste post, veremos os principais conceitos com exemplos práticos.\n📌 Comentários em Python Comentários ajudam na legibilidade do código e são ignorados pelo interpretador.\nComentários de linha única usam #: # Isso é um comentário print(\"Olá, mundo!\") # Comentário no final da linha Comentários de múltiplas linhas usam ''' ou \"\"\": ''' Este é um comentário de múltiplas linhas. Ele pode ser usado para documentar o código. ''' ⚡ Estruturas Condicionais 🛠️ if: Estrutura de Seleção Simples Usamos if para executar um bloco de código apenas se uma condição for verdadeira.\nvalor = float(input(\"Entre com um valor: \")) if valor \u003e 0: print(valor, \"é maior do que zero.\") 🔄 if-else: Estrutura de Seleção com Dois Ramos O else permite executar um código alternativo quando a condição do if não for atendida.\nvalor = float(input(\"Entre com um valor: \")) if valor \u003e 0: print(valor, \"é maior do que zero.\") else: print(valor, \"é menor ou igual a zero.\") 🔗 if-elif-else: Estrutura de Seleção com Múltiplos Ramos Se tivermos mais de duas possibilidades, podemos usar elif:\nnota = float(input(\"Digite sua nota: \")) if nota \u003e= 9: print(\"Aprovado com distinção!\") elif nota \u003e= 7: print(\"Aprovado\") elif nota \u003e= 5: print(\"Recuperação\") else: print(\"Reprovado\") 🔍 Condições Compostas Podemos combinar condições com and, or e intervalos:\nif 10 \u003c= valor \u003c= 20: print(valor, \"está dentro do intervalo [10,20].\") if (valor \u003c 0) or (valor \u003e 30): print(valor, \"está fora do intervalo [0,30].\") 🔄 Estruturas de Repetição 🔁 while: Repetição Indefinida Usamos while quando não sabemos quantas vezes a repetição deve ocorrer.\nindice = 1 while indice \u003c= 10: print(indice, end=' ') indice += 1 print() # Quebra de linha Exemplo: Cálculo de fatorial usando while\nnum = int(input('Digite um número inteiro positivo: ')) i = 1 fat = 1 while i \u003c= num: fat *= i i += 1 print('O fatorial de', num, '=', fat) 🔄 for: Repetição Definida Usamos for quando sabemos quantas vezes queremos repetir algo.\nfor i in range(1, 11): print(i, end=' ') # Imprime números de 1 a 10 print() 🧮 Criando Listas com range() A função range() gera sequências numéricas:\nprint(list(range(5))) # [0, 1, 2, 3, 4] print(list(range(8, 13))) # [8, 9, 10, 11, 12] print(list(range(1, 30, 5))) # [1, 6, 11, 16, 21, 26] print(list(range(5, -14, -3))) # [5, 2, -1, -4, -7, -10, -13] Exemplo: Cálculo de fatorial usando for\nnum = int(input('Digite um número inteiro positivo: ')) fat = 1 for i in range(1, num + 1): fat *= i print('O fatorial de', num, '=', fat) 🎯 Conclusão As estruturas de controle são fundamentais para construir programas dinâmicos e eficientes. Neste post, cobrimos:\n✅ Condicionais: if, if-else, if-elif-else\n✅ Laços de repetição: while e for\n✅ Função range() para gerar sequências\n",
+  "wordCount" : "477",
+  "inLanguage": "pt",
+  "datePublished": "2025-02-04T00:18:49-03:00",
+  "dateModified": "2025-02-04T00:18:49-03:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/python-estruturas-controle/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Notas e Dados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Notas e Dados (Alt + H)">Notas e Dados</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="início">
+                    <span>início</span>
+                </a>
+            </li>
+            <li>
+                <a href="/sobre/" title="bio">
+                    <span>bio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/posts/" title="posts">
+                    <span>posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives/" title="arquivo">
+                    <span>arquivo</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/jeefc" title="GitHub">
+                    <span>GitHub</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Estruturas de Controle em Python
+    </h1>
+    <div class="post-description">
+      Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas.
+    </div>
+    <div class="post-meta"><span title='2025-02-04 00:18:49 -0300 -03'>fevereiro 4, 2025</span>&nbsp;·&nbsp;3 minutos
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="estruturas-de-controle-em-python">Estruturas de Controle em Python<a hidden class="anchor" aria-hidden="true" href="#estruturas-de-controle-em-python">#</a></h2>
+<p>As <strong>estruturas de controle</strong> em Python permitem controlar o fluxo de execução do programa com base em <strong>condições</strong> e <strong>repetições</strong>. Neste post, veremos os principais conceitos com exemplos práticos.</p>
+<hr>
+<h2 id="-comentários-em-python">📌 Comentários em Python<a hidden class="anchor" aria-hidden="true" href="#-comentários-em-python">#</a></h2>
+<p>Comentários ajudam na legibilidade do código e são ignorados pelo interpretador.</p>
+<ul>
+<li>Comentários de <strong>linha única</strong> usam <code>#</code>:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Isso é um comentário</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Olá, mundo!&#34;</span>)  <span style="color:#75715e"># Comentário no final da linha</span>
+</span></span></code></pre></div><ul>
+<li>Comentários de <strong>múltiplas linhas</strong> usam <code>'''</code> ou <code>&quot;&quot;&quot;</code>:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Este é um comentário de múltiplas linhas.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Ele pode ser usado para documentar o código.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+</span></span></code></pre></div><hr>
+<h2 id="-estruturas-condicionais">⚡ Estruturas Condicionais<a hidden class="anchor" aria-hidden="true" href="#-estruturas-condicionais">#</a></h2>
+<h3 id="-if-estrutura-de-seleção-simples">🛠️ <code>if</code>: Estrutura de Seleção Simples<a hidden class="anchor" aria-hidden="true" href="#-if-estrutura-de-seleção-simples">#</a></h3>
+<p>Usamos <code>if</code> para executar um bloco de código apenas se uma condição for verdadeira.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>valor <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entre com um valor: &#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> valor <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(valor, <span style="color:#e6db74">&#34;é maior do que zero.&#34;</span>)
+</span></span></code></pre></div><h3 id="-if-else-estrutura-de-seleção-com-dois-ramos">🔄 <code>if-else</code>: Estrutura de Seleção com Dois Ramos<a hidden class="anchor" aria-hidden="true" href="#-if-else-estrutura-de-seleção-com-dois-ramos">#</a></h3>
+<p>O <code>else</code> permite executar um código alternativo quando a condição do <code>if</code> não for atendida.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>valor <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entre com um valor: &#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> valor <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(valor, <span style="color:#e6db74">&#34;é maior do que zero.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(valor, <span style="color:#e6db74">&#34;é menor ou igual a zero.&#34;</span>)
+</span></span></code></pre></div><h3 id="-if-elif-else-estrutura-de-seleção-com-múltiplos-ramos">🔗 <code>if-elif-else</code>: Estrutura de Seleção com Múltiplos Ramos<a hidden class="anchor" aria-hidden="true" href="#-if-elif-else-estrutura-de-seleção-com-múltiplos-ramos">#</a></h3>
+<p>Se tivermos mais de duas possibilidades, podemos usar <code>elif</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nota <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Digite sua nota: &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> nota <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">9</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Aprovado com distinção!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> nota <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">7</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Aprovado&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> nota <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Recuperação&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Reprovado&#34;</span>)
+</span></span></code></pre></div><h3 id="-condições-compostas">🔍 Condições Compostas<a hidden class="anchor" aria-hidden="true" href="#-condições-compostas">#</a></h3>
+<p>Podemos combinar condições com <code>and</code>, <code>or</code> e intervalos:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">&lt;=</span> valor <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">20</span>:
+</span></span><span style="display:flex;"><span>    print(valor, <span style="color:#e6db74">&#34;está dentro do intervalo [10,20].&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (valor <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">or</span> (valor <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">30</span>):
+</span></span><span style="display:flex;"><span>    print(valor, <span style="color:#e6db74">&#34;está fora do intervalo [0,30].&#34;</span>)
+</span></span></code></pre></div><hr>
+<h2 id="-estruturas-de-repetição">🔄 Estruturas de Repetição<a hidden class="anchor" aria-hidden="true" href="#-estruturas-de-repetição">#</a></h2>
+<h3 id="-while-repetição-indefinida">🔁 <code>while</code>: Repetição Indefinida<a hidden class="anchor" aria-hidden="true" href="#-while-repetição-indefinida">#</a></h3>
+<p>Usamos <code>while</code> quando <strong>não sabemos quantas vezes</strong> a repetição deve ocorrer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>indice <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> indice <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>    print(indice, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>    indice <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>print()  <span style="color:#75715e"># Quebra de linha</span>
+</span></span></code></pre></div><p>Exemplo: <strong>Cálculo de fatorial usando <code>while</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>num <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#39;Digite um número inteiro positivo: &#39;</span>))
+</span></span><span style="display:flex;"><span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>fat <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;=</span> num:
+</span></span><span style="display:flex;"><span>    fat <span style="color:#f92672">*=</span> i
+</span></span><span style="display:flex;"><span>    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;O fatorial de&#39;</span>, num, <span style="color:#e6db74">&#39;=&#39;</span>, fat)
+</span></span></code></pre></div><h3 id="-for-repetição-definida">🔄 <code>for</code>: Repetição Definida<a hidden class="anchor" aria-hidden="true" href="#-for-repetição-definida">#</a></h3>
+<p>Usamos <code>for</code> quando <strong>sabemos quantas vezes</strong> queremos repetir algo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>):  
+</span></span><span style="display:flex;"><span>    print(i, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)  <span style="color:#75715e"># Imprime números de 1 a 10</span>
+</span></span><span style="display:flex;"><span>print()
+</span></span></code></pre></div><h4 id="-criando-listas-com-range">🧮 Criando Listas com <code>range()</code><a hidden class="anchor" aria-hidden="true" href="#-criando-listas-com-range">#</a></h4>
+<p>A função <code>range()</code> gera sequências numéricas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(list(range(<span style="color:#ae81ff">5</span>)))          <span style="color:#75715e"># [0, 1, 2, 3, 4]</span>
+</span></span><span style="display:flex;"><span>print(list(range(<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">13</span>)))      <span style="color:#75715e"># [8, 9, 10, 11, 12]</span>
+</span></span><span style="display:flex;"><span>print(list(range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">5</span>)))   <span style="color:#75715e"># [1, 6, 11, 16, 21, 26]</span>
+</span></span><span style="display:flex;"><span>print(list(range(<span style="color:#ae81ff">5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">14</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>))) <span style="color:#75715e"># [5, 2, -1, -4, -7, -10, -13]</span>
+</span></span></code></pre></div><p>Exemplo: <strong>Cálculo de fatorial usando <code>for</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>num <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#39;Digite um número inteiro positivo: &#39;</span>))
+</span></span><span style="display:flex;"><span>fat <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, num <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>    fat <span style="color:#f92672">*=</span> i
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;O fatorial de&#39;</span>, num, <span style="color:#e6db74">&#39;=&#39;</span>, fat)
+</span></span></code></pre></div><hr>
+<h2 id="-conclusão">🎯 Conclusão<a hidden class="anchor" aria-hidden="true" href="#-conclusão">#</a></h2>
+<p>As <strong>estruturas de controle</strong> são fundamentais para construir programas dinâmicos e eficientes. Neste post, cobrimos:</p>
+<p>✅ Condicionais: <code>if</code>, <code>if-else</code>, <code>if-elif-else</code><br>
+✅ Laços de repetição: <code>while</code> e <code>for</code><br>
+✅ Função <code>range()</code> para gerar sequências</p>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/python/">Python</a></li>
+      <li><a href="/tags/programa%C3%A7%C3%A3o/">Programação</a></li>
+      <li><a href="/tags/estruturas-de-controle/">Estruturas De Controle</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="/posts/python-fstring/">
+    <span class="title">« Página Anterior</span>
+    <br>
+    <span>Introdução às f-strings e Comando de Entrada Padrão no Python</span>
+  </a>
+  <a class="next" href="/posts/maquinas-criam-valor/">
+    <span class="title">Próxima Página »</span>
+    <br>
+    <span>Máquinas Criam Valor? Tecnologia, Trabalho e a Ideologia do Capital</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/">Notas e Dados</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copiar';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copiado!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copiar';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

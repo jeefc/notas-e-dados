@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Programação on Notas e Dados</title>
-    <link>//localhost:1313/tags/programa%C3%A7%C3%A3o/</link>
+    <link>/tags/programa%C3%A7%C3%A3o/</link>
     <description>Recent content in Programação on Notas e Dados</description>
     <generator>Hugo -- 0.143.0</generator>
-    <language>us</language>
+    <language>pt-BR</language>
     <lastBuildDate>Tue, 04 Feb 2025 03:12:24 -0300</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introdução às f-strings e Comando de Entrada Padrão no Python</title>
-      <link>//localhost:1313/posts/pythonfstring/</link>
+      <link>/posts/python-fstring/</link>
       <pubDate>Tue, 04 Feb 2025 03:12:24 -0300</pubDate>
-      <guid>//localhost:1313/posts/pythonfstring/</guid>
+      <guid>/posts/python-fstring/</guid>
       <description>Explorando a simplicidade e eficiência das f-strings no Python, além de entender o comando de entrada padrão.</description>
     </item>
     <item>
       <title>Estruturas de Controle em Python</title>
-      <link>//localhost:1313/posts/pythonestruturas/</link>
+      <link>/posts/python-estruturas-controle/</link>
       <pubDate>Tue, 04 Feb 2025 00:18:49 -0300</pubDate>
-      <guid>//localhost:1313/posts/pythonestruturas/</guid>
+      <guid>/posts/python-estruturas-controle/</guid>
       <description>Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas.</description>
     </item>
   </channel>

@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Notas e Dados</title>
-    <link>//localhost:1313/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Notas e Dados</description>
     <generator>Hugo -- 0.143.0</generator>
-    <language>us</language>
+    <language>pt-BR</language>
     <lastBuildDate>Tue, 04 Feb 2025 03:12:24 -0300</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>F-Strings</title>
-      <link>//localhost:1313/tags/f-strings/</link>
+      <link>/tags/f-strings/</link>
       <pubDate>Tue, 04 Feb 2025 03:12:24 -0300</pubDate>
-      <guid>//localhost:1313/tags/f-strings/</guid>
+      <guid>/tags/f-strings/</guid>
       <description></description>
     </item>
     <item>
       <title>Programação</title>
-      <link>//localhost:1313/tags/programa%C3%A7%C3%A3o/</link>
+      <link>/tags/programa%C3%A7%C3%A3o/</link>
       <pubDate>Tue, 04 Feb 2025 03:12:24 -0300</pubDate>
-      <guid>//localhost:1313/tags/programa%C3%A7%C3%A3o/</guid>
+      <guid>/tags/programa%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>//localhost:1313/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Tue, 04 Feb 2025 03:12:24 -0300</pubDate>
-      <guid>//localhost:1313/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Estruturas De Controle</title>
-      <link>//localhost:1313/tags/estruturas-de-controle/</link>
+      <link>/tags/estruturas-de-controle/</link>
       <pubDate>Tue, 04 Feb 2025 00:18:49 -0300</pubDate>
-      <guid>//localhost:1313/tags/estruturas-de-controle/</guid>
+      <guid>/tags/estruturas-de-controle/</guid>
       <description></description>
     </item>
     <item>
       <title>Inteligência Artificial</title>
-      <link>//localhost:1313/tags/intelig%C3%AAncia-artificial/</link>
+      <link>/tags/intelig%C3%AAncia-artificial/</link>
       <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
-      <guid>//localhost:1313/tags/intelig%C3%AAncia-artificial/</guid>
+      <guid>/tags/intelig%C3%AAncia-artificial/</guid>
       <description></description>
     </item>
     <item>
       <title>Marxismo</title>
-      <link>//localhost:1313/tags/marxismo/</link>
+      <link>/tags/marxismo/</link>
       <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
-      <guid>//localhost:1313/tags/marxismo/</guid>
+      <guid>/tags/marxismo/</guid>
       <description></description>
     </item>
     <item>
       <title>Tecnologia</title>
-      <link>//localhost:1313/tags/tecnologia/</link>
+      <link>/tags/tecnologia/</link>
       <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
-      <guid>//localhost:1313/tags/tecnologia/</guid>
+      <guid>/tags/tecnologia/</guid>
       <description></description>
     </item>
     <item>
       <title>Trabalho</title>
-      <link>//localhost:1313/tags/trabalho/</link>
+      <link>/tags/trabalho/</link>
       <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
-      <guid>//localhost:1313/tags/trabalho/</guid>
+      <guid>/tags/trabalho/</guid>
       <description></description>
     </item>
     <item>
       <title>Análise De Dados</title>
-      <link>//localhost:1313/tags/an%C3%A1lise-de-dados/</link>
+      <link>/tags/an%C3%A1lise-de-dados/</link>
       <pubDate>Mon, 03 Feb 2025 18:21:19 -0300</pubDate>
-      <guid>//localhost:1313/tags/an%C3%A1lise-de-dados/</guid>
+      <guid>/tags/an%C3%A1lise-de-dados/</guid>
       <description></description>
     </item>
     <item>
       <title>SQL</title>
-      <link>//localhost:1313/tags/sql/</link>
+      <link>/tags/sql/</link>
       <pubDate>Mon, 03 Feb 2025 15:00:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/sql/</guid>
+      <guid>/tags/sql/</guid>
       <description></description>
     </item>
     <item>
       <title>Algoritmos</title>
-      <link>//localhost:1313/tags/algoritmos/</link>
+      <link>/tags/algoritmos/</link>
       <pubDate>Mon, 03 Feb 2025 14:00:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/algoritmos/</guid>
+      <guid>/tags/algoritmos/</guid>
       <description></description>
     </item>
     <item>
       <title>Bourdieu</title>
-      <link>//localhost:1313/tags/bourdieu/</link>
+      <link>/tags/bourdieu/</link>
       <pubDate>Mon, 03 Feb 2025 14:00:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/bourdieu/</guid>
+      <guid>/tags/bourdieu/</guid>
       <description></description>
     </item>
     <item>
       <title>Sociedade</title>
-      <link>//localhost:1313/tags/sociedade/</link>
+      <link>/tags/sociedade/</link>
       <pubDate>Mon, 03 Feb 2025 14:00:00 -0300</pubDate>
-      <guid>//localhost:1313/tags/sociedade/</guid>
+      <guid>/tags/sociedade/</guid>
       <description></description>
     </item>
   </channel>

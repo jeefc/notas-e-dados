@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="/css/custom.css"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>SQL: Filtrando Dados com WHERE, AND, OR e IN | Notas e Dados</title>
+<meta name="keywords" content="SQL">
+<meta name="description" content="Entenda como aplicar filtros em consultas SQL usando WHERE, operadores lógicos e padrões de busca.">
+<meta name="author" content="">
+<link rel="canonical" href="/posts/filtrando-sql/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="pt" href="/posts/filtrando-sql/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/posts/filtrando-sql/">
+  <meta property="og:site_name" content="Notas e Dados">
+  <meta property="og:title" content="SQL: Filtrando Dados com WHERE, AND, OR e IN">
+  <meta property="og:description" content="Entenda como aplicar filtros em consultas SQL usando WHERE, operadores lógicos e padrões de busca.">
+  <meta property="og:locale" content="pt-BR">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-03T15:00:00-03:00">
+    <meta property="article:modified_time" content="2025-02-03T15:00:00-03:00">
+    <meta property="article:tag" content="SQL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SQL: Filtrando Dados com WHERE, AND, OR e IN">
+<meta name="twitter:description" content="Entenda como aplicar filtros em consultas SQL usando WHERE, operadores lógicos e padrões de busca.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "SQL: Filtrando Dados com WHERE, AND, OR e IN",
+      "item": "/posts/filtrando-sql/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "SQL: Filtrando Dados com WHERE, AND, OR e IN",
+  "name": "SQL: Filtrando Dados com WHERE, AND, OR e IN",
+  "description": "Entenda como aplicar filtros em consultas SQL usando WHERE, operadores lógicos e padrões de busca.",
+  "keywords": [
+    "SQL"
+  ],
+  "articleBody": "SQL: Filtrando Dados com WHERE, AND, OR e IN Ao trabalhar com bancos de dados, muitas vezes precisamos recuperar apenas um subconjunto de informações. Para isso, utilizamos o comando WHERE, que permite definir condições dentro de uma consulta SELECT.\n🔍 Usando WHERE para Filtrar Resultados O comando WHERE é usado para especificar quais registros devem ser retornados com base em uma condição.\nSELECT name, age FROM employees WHERE age \u003e 30; Esse comando retorna todos os funcionários com idade superior a 30 anos.\n⚡ Operadores Comuns Os operadores mais usados em WHERE são:\n=, \u003e, \u003c, \u003e=, \u003c=, \u003c\u003e: Para comparações básicas. ❌ Operador de negação Para excluir um valor específico, podemos usar != ou \u003c\u003e:\nSELECT * FROM STATION_DATA WHERE year != 2010; Ou, de forma equivalente:\nSELECT * FROM STATION_DATA WHERE year \u003c\u003e 2010; Ambas as consultas retornam todos os registros exceto aqueles onde o ano é 2010.\n📅 BETWEEN: Selecionando Intervalos Se precisarmos buscar registros dentro de um intervalo de valores, podemos usar BETWEEN:\nSELECT * FROM STATION_DATA WHERE year BETWEEN 2005 AND 2010; Essa consulta retorna todos os registros entre os anos 2005 e 2010, incluindo ambos.\n🔎 LIKE: Buscando Padrões Quando queremos encontrar registros com base em padrões de texto, usamos LIKE.\nSELECT * FROM customers WHERE name LIKE 'J%'; Nesse caso, a consulta retorna todos os clientes cujo nome começa com “J”.\n% representa qualquer sequência de caracteres. _ representa um único caractere. Por exemplo, LIKE 'J_n%' retornaria nomes como “John”, mas não “Jordan”.\n🎯 Combinando Condições: AND, OR e IN ✅ IN: Comparação com uma Lista de Valores Se quisermos verificar se um valor pertence a um conjunto específico, podemos usar IN:\nSELECT * FROM orders WHERE status IN ('Completed', 'Pending'); Essa consulta retorna todos os pedidos que estão com status “Completed” ou “Pending”.\n🔗 AND: Múltiplos Critérios O operador AND exige que todas as condições sejam verdadeiras para que um registro seja retornado.\nSELECT * FROM STATION_DATA WHERE year \u003e= 2005 AND year \u003c= 2010; Se quisermos excluir os anos 2005 e 2010, podemos remover os =:\nSELECT * FROM STATION_DATA WHERE year \u003e 2005 AND year \u003c 2010; Agora, apenas os anos 2006, 2007, 2008 e 2009 serão retornados.\n🔀 OR: Qualquer Critério Aceito Diferente do AND, o OR retorna registros se pelo menos uma das condições for verdadeira.\nSELECT * FROM STATION_DATA WHERE year = 2005 OR year = 2010; Aqui, a consulta retornará todos os registros do ano 2005 e do ano 2010.\n🔥 Conclusão Dominar o uso do WHERE e seus operadores auxilia na extração precisa de dados em bancos de dados SQL.\nUse BETWEEN para intervalos. Utilize LIKE para buscas por padrões. Combine AND, OR e IN para filtros mais poderosos. Saber estruturar bem essas consultas pode melhorar o desempenho e a eficiência ao trabalhar com grandes volumes de dados.\n",
+  "wordCount" : "473",
+  "inLanguage": "pt",
+  "datePublished": "2025-02-03T15:00:00-03:00",
+  "dateModified": "2025-02-03T15:00:00-03:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/filtrando-sql/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Notas e Dados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Notas e Dados (Alt + H)">Notas e Dados</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="início">
+                    <span>início</span>
+                </a>
+            </li>
+            <li>
+                <a href="/sobre/" title="bio">
+                    <span>bio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/posts/" title="posts">
+                    <span>posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives/" title="arquivo">
+                    <span>arquivo</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/jeefc" title="GitHub">
+                    <span>GitHub</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      SQL: Filtrando Dados com WHERE, AND, OR e IN
+    </h1>
+    <div class="post-description">
+      Entenda como aplicar filtros em consultas SQL usando WHERE, operadores lógicos e padrões de busca.
+    </div>
+    <div class="post-meta"><span title='2025-02-03 15:00:00 -0300 -03'>fevereiro 3, 2025</span>&nbsp;·&nbsp;3 minutos
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="sql-filtrando-dados-com-where-and-or-e-in">SQL: Filtrando Dados com WHERE, AND, OR e IN<a hidden class="anchor" aria-hidden="true" href="#sql-filtrando-dados-com-where-and-or-e-in">#</a></h2>
+<p>Ao trabalhar com bancos de dados, muitas vezes precisamos recuperar apenas um subconjunto de informações. Para isso, utilizamos o <strong>comando <code>WHERE</code></strong>, que permite definir condições dentro de uma consulta <code>SELECT</code>.</p>
+<h3 id="-usando-where-para-filtrar-resultados">🔍 Usando <code>WHERE</code> para Filtrar Resultados<a hidden class="anchor" aria-hidden="true" href="#-usando-where-para-filtrar-resultados">#</a></h3>
+<p>O comando <code>WHERE</code> é usado para especificar quais registros devem ser retornados com base em uma condição.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> name, age
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> employees
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> age <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">30</span>;
+</span></span></code></pre></div><p>Esse comando retorna todos os funcionários com idade superior a 30 anos.</p>
+<h3 id="-operadores-comuns">⚡ Operadores Comuns<a hidden class="anchor" aria-hidden="true" href="#-operadores-comuns">#</a></h3>
+<p>Os operadores mais usados em <code>WHERE</code> são:</p>
+<ul>
+<li><strong><code>=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>&lt;&gt;</code></strong>: Para comparações básicas.</li>
+</ul>
+<h4 id="-operador-de-negação">❌ Operador de negação<a hidden class="anchor" aria-hidden="true" href="#-operador-de-negação">#</a></h4>
+<p>Para excluir um valor específico, podemos usar <code>!=</code> ou <code>&lt;&gt;</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> STATION_DATA
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">2010</span>;
+</span></span></code></pre></div><p>Ou, de forma equivalente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> STATION_DATA
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">&lt;&gt;</span> <span style="color:#ae81ff">2010</span>;
+</span></span></code></pre></div><p>Ambas as consultas retornam todos os registros <strong>exceto</strong> aqueles onde o ano é 2010.</p>
+<h4 id="-between-selecionando-intervalos">📅 <code>BETWEEN</code>: Selecionando Intervalos<a hidden class="anchor" aria-hidden="true" href="#-between-selecionando-intervalos">#</a></h4>
+<p>Se precisarmos buscar registros dentro de um intervalo de valores, podemos usar <code>BETWEEN</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> STATION_DATA
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">year</span> <span style="color:#66d9ef">BETWEEN</span> <span style="color:#ae81ff">2005</span> <span style="color:#66d9ef">AND</span> <span style="color:#ae81ff">2010</span>;
+</span></span></code></pre></div><p>Essa consulta retorna todos os registros entre os anos <strong>2005 e 2010</strong>, incluindo ambos.</p>
+<h4 id="-like-buscando-padrões">🔎 <code>LIKE</code>: Buscando Padrões<a hidden class="anchor" aria-hidden="true" href="#-like-buscando-padrões">#</a></h4>
+<p>Quando queremos encontrar registros com base em padrões de texto, usamos <code>LIKE</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> customers <span style="color:#66d9ef">WHERE</span> name <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;J%&#39;</span>;
+</span></span></code></pre></div><p>Nesse caso, a consulta retorna <strong>todos os clientes cujo nome começa com &ldquo;J&rdquo;</strong>.</p>
+<ul>
+<li><code>%</code> representa <strong>qualquer sequência de caracteres</strong>.</li>
+<li><code>_</code> representa <strong>um único caractere</strong>.</li>
+</ul>
+<p>Por exemplo, <code>LIKE 'J_n%'</code> retornaria nomes como <strong>&ldquo;John&rdquo;</strong>, mas não <strong>&ldquo;Jordan&rdquo;</strong>.</p>
+<hr>
+<h2 id="-combinando-condições-and-or-e-in">🎯 Combinando Condições: <code>AND</code>, <code>OR</code> e <code>IN</code><a hidden class="anchor" aria-hidden="true" href="#-combinando-condições-and-or-e-in">#</a></h2>
+<h3 id="-in-comparação-com-uma-lista-de-valores">✅ <code>IN</code>: Comparação com uma Lista de Valores<a hidden class="anchor" aria-hidden="true" href="#-in-comparação-com-uma-lista-de-valores">#</a></h3>
+<p>Se quisermos verificar se um valor pertence a um conjunto específico, podemos usar <code>IN</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> orders <span style="color:#66d9ef">WHERE</span> status <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;Completed&#39;</span>, <span style="color:#e6db74">&#39;Pending&#39;</span>);
+</span></span></code></pre></div><p>Essa consulta retorna todos os pedidos que estão com status <strong>&ldquo;Completed&rdquo;</strong> ou <strong>&ldquo;Pending&rdquo;</strong>.</p>
+<h3 id="-and-múltiplos-critérios">🔗 <code>AND</code>: Múltiplos Critérios<a hidden class="anchor" aria-hidden="true" href="#-and-múltiplos-critérios">#</a></h3>
+<p>O operador <code>AND</code> exige que <strong>todas</strong> as condições sejam verdadeiras para que um registro seja retornado.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> STATION_DATA
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2005</span> <span style="color:#66d9ef">AND</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">2010</span>;
+</span></span></code></pre></div><p>Se quisermos <strong>excluir</strong> os anos 2005 e 2010, podemos remover os <code>=</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> STATION_DATA
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2005</span> <span style="color:#66d9ef">AND</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2010</span>;
+</span></span></code></pre></div><p>Agora, apenas os anos <strong>2006, 2007, 2008 e 2009</strong> serão retornados.</p>
+<h3 id="-or-qualquer-critério-aceito">🔀 <code>OR</code>: Qualquer Critério Aceito<a hidden class="anchor" aria-hidden="true" href="#-or-qualquer-critério-aceito">#</a></h3>
+<p>Diferente do <code>AND</code>, o <code>OR</code> retorna registros se <strong>pelo menos uma</strong> das condições for verdadeira.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> STATION_DATA
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2005</span> <span style="color:#66d9ef">OR</span> <span style="color:#66d9ef">year</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2010</span>;
+</span></span></code></pre></div><p>Aqui, a consulta retornará <strong>todos os registros do ano 2005 e do ano 2010</strong>.</p>
+<hr>
+<h2 id="-conclusão">🔥 Conclusão<a hidden class="anchor" aria-hidden="true" href="#-conclusão">#</a></h2>
+<p>Dominar o uso do <code>WHERE</code> e seus operadores auxilia na <strong>extração precisa de dados</strong> em bancos de dados SQL.</p>
+<ul>
+<li>Use <code>BETWEEN</code> para intervalos.</li>
+<li>Utilize <code>LIKE</code> para buscas por padrões.</li>
+<li>Combine <code>AND</code>, <code>OR</code> e <code>IN</code> para filtros mais poderosos.</li>
+</ul>
+<p>Saber estruturar bem essas consultas pode melhorar o desempenho e a eficiência ao trabalhar com grandes volumes de dados.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/sql/">SQL</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="/posts/ferramentas-para-iniciantes/">
+    <span class="title">« Página Anterior</span>
+    <br>
+    <span>Ferramentas Essenciais para Iniciantes em Análise de Dados</span>
+  </a>
+  <a class="next" href="/posts/tecnologia-dominacao/">
+    <span class="title">Próxima Página »</span>
+    <br>
+    <span>O Algoritmo Invisível: Tecnologia e Dominação Simbólica</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/">Notas e Dados</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copiar';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copiado!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copiar';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
