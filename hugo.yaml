@@ -1,0 +1,76 @@
+baseURL: ""
+languageCode: us
+title: Notas e Dados
+theme: PaperMod
+
+params:
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowReadingTime: true
+  ShowShareButtons: false
+  defaultTheme: auto
+
+  homeInfoParams:
+    Title: 👋 Bem-vindo ao Notas e Dados!
+    Content: |
+      <br>
+      Olá! Meu nome é <a href="/sobre/">Jeferson</a>, e este é meu espaço para documentar aprendizados e reflexões. 📚<br>
+      Aqui você acompanha meus estudos, notas pessoais e projetos futuros:<br><br>
+      <ul style="list-style: disc; margin-left: 20px;">
+        <li><strong>Estudos:</strong> Explorando Computação, Análise de Dados e Desenvolvimento de Software.</li>
+        <li><strong>Notas Pessoais:</strong> Reflexões sobre filosofia, tecnologia e sociedade.</li>
+        <li><strong>Projetos:</strong> Experimentos, desafios e evolução na prática.</li>
+      </ul>
+      <br>
+      Compartilhar conhecimento é parte do processo. Vamos construir juntos? 🔍
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/jeefc"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/jefersoncostalica/"
+    - name: "email"
+      url: "mailto:jefersonlica@id.uff.br"
+
+menu:
+  main:
+    - identifier: home
+      name: início
+      url: /
+      weight: 1
+
+    - identifier: sobre
+      name: "bio"
+      url: "/sobre/"
+      weight: 2
+
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 3
+
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 4
+
+    - identifier: archive
+      name: arquivo
+      url: /archives/
+      weight: 5
+
+    - identifier: github
+      name: GitHub
+      url: "https://github.com/jeefc"
+      weight: 6
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

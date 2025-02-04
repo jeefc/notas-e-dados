@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Notas e Dados</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Notas e Dados</description>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>us</language>
+    <lastBuildDate>Tue, 04 Feb 2025 00:18:49 -0300</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estruturas de Controle em Python</title>
+      <link>//localhost:1313/posts/pythonestruturas/</link>
+      <pubDate>Tue, 04 Feb 2025 00:18:49 -0300</pubDate>
+      <guid>//localhost:1313/posts/pythonestruturas/</guid>
+      <description>Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas.</description>
+    </item>
+    <item>
+      <title>Máquinas Criam Valor? Tecnologia, Trabalho e a Ideologia do Capital</title>
+      <link>//localhost:1313/posts/maquinas/</link>
+      <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
+      <guid>//localhost:1313/posts/maquinas/</guid>
+      <description>Um olhar crítico sobre tecnologia, trabalho e a narrativa da automação como criadora de valor.</description>
+    </item>
+    <item>
+      <title>Ferramentas Essenciais para Iniciantes em Análise de Dados</title>
+      <link>//localhost:1313/posts/second/</link>
+      <pubDate>Mon, 03 Feb 2025 18:21:19 -0300</pubDate>
+      <guid>//localhost:1313/posts/second/</guid>
+      <description>&lt;h3 id=&#34;introdução&#34;&gt;Introdução&lt;/h3&gt;
+&lt;p&gt;Ingressar no mundo da Análise de Dados pode parecer desafiador devido à variedade de ferramentas disponíveis. Neste post, apresento algumas das principais ferramentas que considero essenciais para quem está começando, com base na minha experiência e nos recursos que tenho explorado.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Microsoft Excel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;O Excel é uma ferramenta poderosa e amplamente utilizada para análise de dados. Ele permite organizar, manipular e visualizar dados de forma intuitiva. Para iniciantes, é um ótimo ponto de partida para entender conceitos básicos de análise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQL: Filtrando Dados com WHERE, AND, OR e IN</title>
+      <link>//localhost:1313/posts/filtrandosql/</link>
+      <pubDate>Mon, 03 Feb 2025 15:00:00 -0300</pubDate>
+      <guid>//localhost:1313/posts/filtrandosql/</guid>
+      <description>Entenda como aplicar filtros em consultas SQL usando WHERE, operadores lógicos e padrões de busca.</description>
+    </item>
+    <item>
+      <title>O Algoritmo Invisível: Tecnologia e Dominação Simbólica</title>
+      <link>//localhost:1313/posts/third/</link>
+      <pubDate>Mon, 03 Feb 2025 14:00:00 -0300</pubDate>
+      <guid>//localhost:1313/posts/third/</guid>
+      <description>Uma análise bourdieusiana sobre como os algoritmos estruturam relações de poder e reforçam desigualdades no ambiente digital.</description>
+    </item>
+    <item>
+      <title>Introdução: Bem-vindo ao Notas e Dados</title>
+      <link>//localhost:1313/posts/first/</link>
+      <pubDate>Mon, 03 Feb 2025 10:00:00 -0300</pubDate>
+      <guid>//localhost:1313/posts/first/</guid>
+      <description>Meu espaço para registrar aprendizados, anotações e projetos em tecnologia e além.</description>
+    </item>
+  </channel>
+</rss>

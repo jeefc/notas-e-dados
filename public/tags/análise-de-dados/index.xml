@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Análise De Dados on Notas e Dados</title>
+    <link>//localhost:1313/tags/an%C3%A1lise-de-dados/</link>
+    <description>Recent content in Análise De Dados on Notas e Dados</description>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>us</language>
+    <lastBuildDate>Mon, 03 Feb 2025 18:21:19 -0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/an%C3%A1lise-de-dados/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ferramentas Essenciais para Iniciantes em Análise de Dados</title>
+      <link>//localhost:1313/posts/second/</link>
+      <pubDate>Mon, 03 Feb 2025 18:21:19 -0300</pubDate>
+      <guid>//localhost:1313/posts/second/</guid>
+      <description>&lt;h3 id=&#34;introdução&#34;&gt;Introdução&lt;/h3&gt;
+&lt;p&gt;Ingressar no mundo da Análise de Dados pode parecer desafiador devido à variedade de ferramentas disponíveis. Neste post, apresento algumas das principais ferramentas que considero essenciais para quem está começando, com base na minha experiência e nos recursos que tenho explorado.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Microsoft Excel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;O Excel é uma ferramenta poderosa e amplamente utilizada para análise de dados. Ele permite organizar, manipular e visualizar dados de forma intuitiva. Para iniciantes, é um ótimo ponto de partida para entender conceitos básicos de análise.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
