@@ -3,30 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/categories/</loc>
-    <lastmod>2025-02-04T00:18:49-03:00</lastmod>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/estudos/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/f-strings/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/pythonfstring/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/programa%C3%A7%C3%A3o/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-02-04T03:12:24-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/estruturas-de-controle/</loc>
     <lastmod>2025-02-04T00:18:49-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/pythonestruturas/</loc>
-    <lastmod>2025-02-04T00:18:49-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/estudos/</loc>
-    <lastmod>2025-02-04T00:18:49-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2025-02-04T00:18:49-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2025-02-04T00:18:49-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/programa%C3%A7%C3%A3o/</loc>
-    <lastmod>2025-02-04T00:18:49-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/python/</loc>
-    <lastmod>2025-02-04T00:18:49-03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2025-02-04T00:18:49-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/intelig%C3%AAncia-artificial/</loc>

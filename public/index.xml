@@ -6,8 +6,15 @@
     <description>Recent content on Notas e Dados</description>
     <generator>Hugo -- 0.143.0</generator>
     <language>us</language>
-    <lastBuildDate>Tue, 04 Feb 2025 00:18:49 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2025 03:12:24 -0300</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introdução às f-strings e Comando de Entrada Padrão no Python</title>
+      <link>//localhost:1313/posts/pythonfstring/</link>
+      <pubDate>Tue, 04 Feb 2025 03:12:24 -0300</pubDate>
+      <guid>//localhost:1313/posts/pythonfstring/</guid>
+      <description>Explorando a simplicidade e eficiência das f-strings no Python, além de entender o comando de entrada padrão.</description>
+    </item>
     <item>
       <title>Estruturas de Controle em Python</title>
       <link>//localhost:1313/posts/pythonestruturas/</link>

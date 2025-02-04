@@ -17,7 +17,7 @@ params:
   defaultTheme: auto
 
   homeInfoParams:
-    Title: 👋 Bem-vindo ao Notas e Dados!
+    Title: 👋 Bem-vindo ao meu Blog!
     Content: |
       <br>
       Olá! Meu nome é <a href="/sobre/">Jeferson</a>, e este é meu espaço para documentar aprendizados e reflexões. 📚<br>
