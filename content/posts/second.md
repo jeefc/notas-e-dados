@@ -1,7 +1,7 @@
 ---
+title: 'Ferramentas Essenciais para Iniciantes em Análise de Dados'
 date: '2025-02-03T18:21:19-03:00'
 draft: false
-title: 'Ferramentas Essenciais para Iniciantes em Análise de Dados'
 tags: ["análise de dados"]
 ---
 ### Introdução
