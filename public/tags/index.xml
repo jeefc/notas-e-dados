@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Notas e Dados</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on Notas e Dados</description>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>us</language>
+    <lastBuildDate>Tue, 04 Feb 2025 00:18:49 -0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estruturas De Controle</title>
+      <link>//localhost:1313/tags/estruturas-de-controle/</link>
+      <pubDate>Tue, 04 Feb 2025 00:18:49 -0300</pubDate>
+      <guid>//localhost:1313/tags/estruturas-de-controle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programação</title>
+      <link>//localhost:1313/tags/programa%C3%A7%C3%A3o/</link>
+      <pubDate>Tue, 04 Feb 2025 00:18:49 -0300</pubDate>
+      <guid>//localhost:1313/tags/programa%C3%A7%C3%A3o/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>//localhost:1313/tags/python/</link>
+      <pubDate>Tue, 04 Feb 2025 00:18:49 -0300</pubDate>
+      <guid>//localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inteligência Artificial</title>
+      <link>//localhost:1313/tags/intelig%C3%AAncia-artificial/</link>
+      <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
+      <guid>//localhost:1313/tags/intelig%C3%AAncia-artificial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marxismo</title>
+      <link>//localhost:1313/tags/marxismo/</link>
+      <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
+      <guid>//localhost:1313/tags/marxismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tecnologia</title>
+      <link>//localhost:1313/tags/tecnologia/</link>
+      <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
+      <guid>//localhost:1313/tags/tecnologia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trabalho</title>
+      <link>//localhost:1313/tags/trabalho/</link>
+      <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
+      <guid>//localhost:1313/tags/trabalho/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Análise De Dados</title>
+      <link>//localhost:1313/tags/an%C3%A1lise-de-dados/</link>
+      <pubDate>Mon, 03 Feb 2025 18:21:19 -0300</pubDate>
+      <guid>//localhost:1313/tags/an%C3%A1lise-de-dados/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>//localhost:1313/tags/sql/</link>
+      <pubDate>Mon, 03 Feb 2025 15:00:00 -0300</pubDate>
+      <guid>//localhost:1313/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algoritmos</title>
+      <link>//localhost:1313/tags/algoritmos/</link>
+      <pubDate>Mon, 03 Feb 2025 14:00:00 -0300</pubDate>
+      <guid>//localhost:1313/tags/algoritmos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bourdieu</title>
+      <link>//localhost:1313/tags/bourdieu/</link>
+      <pubDate>Mon, 03 Feb 2025 14:00:00 -0300</pubDate>
+      <guid>//localhost:1313/tags/bourdieu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sociedade</title>
+      <link>//localhost:1313/tags/sociedade/</link>
+      <pubDate>Mon, 03 Feb 2025 14:00:00 -0300</pubDate>
+      <guid>//localhost:1313/tags/sociedade/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

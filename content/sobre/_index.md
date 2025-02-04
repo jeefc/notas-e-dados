@@ -3,7 +3,7 @@ title: "Jeferson Lica"
 description: "Da prática técnica à academia: compartilhando aprendizados em desenvolvimento de software e reflexões sobre tecnologia e sociedade."
 ---
 
-<img src="/minhafoto.jpg" alt="Jeferson Lica" class="profile-image">
+<img src="/minhafoto.jpg" alt="Jeferson Lica" style="width: 200px; height: 200px; border-radius: 50%; display: block; margin: 0 auto; object-fit: cover;">
 
 ## Sobre mim
 

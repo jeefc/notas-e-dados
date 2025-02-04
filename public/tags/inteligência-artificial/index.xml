@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Inteligência Artificial on Notas e Dados</title>
+    <link>//localhost:1313/tags/intelig%C3%AAncia-artificial/</link>
+    <description>Recent content in Inteligência Artificial on Notas e Dados</description>
+    <generator>Hugo -- 0.143.0</generator>
+    <language>us</language>
+    <lastBuildDate>Mon, 03 Feb 2025 23:24:07 -0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/intelig%C3%AAncia-artificial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Máquinas Criam Valor? Tecnologia, Trabalho e a Ideologia do Capital</title>
+      <link>//localhost:1313/posts/maquinas/</link>
+      <pubDate>Mon, 03 Feb 2025 23:24:07 -0300</pubDate>
+      <guid>//localhost:1313/posts/maquinas/</guid>
+      <description>Um olhar crítico sobre tecnologia, trabalho e a narrativa da automação como criadora de valor.</description>
+    </item>
+  </channel>
+</rss>
