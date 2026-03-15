@@ -5,6 +5,7 @@ draft: false
 description: "Como usar condicionais e loops em Python para controlar o fluxo do seu programa."
 tags: ["Python", "programação", "estruturas de controle"]
 categories: ["Estudos"]
+TocOpen: true
 ---
 
 ## Estruturas de Controle em Python

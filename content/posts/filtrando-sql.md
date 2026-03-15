@@ -5,6 +5,7 @@ draft: false
 description: "Aprenda a filtrar resultados em consultas SQL usando WHERE, operadores lógicos e padrões de busca."
 tags: ["SQL"]
 categories: ["Estudos"]
+TocOpen: true
 ---
 
 ## Filtrando dados com WHERE

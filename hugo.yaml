@@ -11,6 +11,7 @@ title: Notas e Dados
 theme: PaperMod
 
 params:
+  env: production
   assets:
     favicon: "/favicon.ico"
     favicon16x16: "/favicon-16x16.png"
@@ -72,10 +73,7 @@ menu:
       url: /archives/
       weight: 5
 
-    - identifier: github
-      name: GitHub
-      url: "https://github.com/jeefc"
-      weight: 6
+
 
 markup:
   goldmark:
