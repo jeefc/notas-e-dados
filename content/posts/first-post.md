@@ -9,17 +9,17 @@ categories: ["Geral"]
 
 Fala pessoal, beleza?
 
-Este é o meu primeiro post por aqui. A ideia de criar o **Notas e Dados** não é inventar a roda ou lançar um grande portal de tecnologia. É simplesmente ter um espaço meu para registrar as coisas que vou aprendendo no dia a dia.
+Este é o meu primeiro post por aqui. A ideia de criar o **Notas e Dados** não é inventar a roda ou lançar um grande portal de tecnologia. É ter um espaço para registrar o que vou aprendendo nessa transição entre a TI tradicional e o desenvolvimento de software.
 
-Trabalhei um bom tempo com TI — prestando suporte, lidando com infraestrutura, fuçando em tudo um pouco — e agora estou focado na graduação em Computação na UFF e me aprofundando em análise de dados. E como a gente sabe, na nossa área, ou você anota o que aprende, ou na semana seguinte já esqueceu como aquele código funcionava.
+Como mencionei na bio, passei um bom tempo lidando com suporte, redes e infraestrutura. Agora, enquanto curso Computação na UFF, foco em construir sistemas reais com Django e Next.js. Quem trabalha com código sabe: se você não documenta o que resolveu hoje, amanhã já perdeu o raciocínio.
 
-Então, o que vai rolar por aqui?
-- **Anotações técnicas:** Resumos práticos de linguagens (principalmente Python e SQL), código, ferramentas e um pouco de base matemática quando necessário.
-- **Ideias e reflexões:** Acho perigoso quando a gente fica bitolado só no código e no terminal. Então também gosto de trazer reflexões sobre o impacto da tecnologia na sociedade, como ela afeta o trabalho e as relações humanas. Fica um pouco mais teórico, mas prometo que faz sentido na prática.
+O que pretendo trazer para cá:
+- **Anotações de desenvolvimento:** Resumos práticos de Python, SQL, lógica e IA, focados no que realmente uso nos meus projetos corporativos e de varejo.
+- **Tecnologia além do código:** Reflexões sobre como essas ferramentas moldam o trabalho e a sociedade. Gosto de pensar na tecnologia de um ângulo que vai além do terminal.
 
-O objetivo principal é documentar a minha própria evolução. Mas se algo do que eu jogar aqui ajudar você a resolver um problema, entender um conceito ou só parar pra pensar um pouco, o blog já cumpriu a missão.
+O objetivo é documentar o meu próprio caminho. Se algo aqui te ajudar a resolver um problema ou despertar um novo ponto de vista, o esforço de publicar já valeu a pena.
 
-Valeu por aparecer. Fique à vontade para explorar os textos e códigos.
+Valeu por aparecer.
 
 Até mais,
 **Jeferson Lica**
