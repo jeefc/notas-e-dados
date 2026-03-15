@@ -1,21 +1,15 @@
 ---
-title: "Introdução às f-strings e Comando de Entrada Padrão no Python"
+title: "F-strings e input() em Python"
 date: 2025-02-04T03:12:24-03:00
 draft: false
-description: "Explorando a simplicidade e eficiência das f-strings no Python, além de entender o comando de entrada padrão."
+description: "Como formatar strings de forma moderna com f-strings e como capturar dados do usuário com input()."
 tags: ["Python", "programação", "f-strings"]
 categories: ["Estudos"]
 ---
 
-## F-strings no Python
+## F-strings em Python
 
-As **f-strings** são uma forma moderna e eficiente de formatar strings em Python. Elas são mais rápidas e mais legíveis em comparação com outras formas de formatação, como o método `str.format()` ou o operador `%`. As f-strings são altamente recomendadas para a maioria dos cenários de formatação de strings devido à sua simplicidade e desempenho superior.
-
-### Vantagens das f-strings:
-- **Velocidade**: Elas são mais rápidas, pois o Python as compila em código mais otimizado.
-- **Legibilidade**: O código se torna mais claro e fácil de entender.
-
-Exemplo de uso de uma f-string:
+F-strings são a forma mais prática de embutir variáveis dentro de um texto em Python. Para usá-las, basta colocar um `f` antes das aspas e envolver as variáveis em `{}`.
 
 ```python
 nome = "João"
@@ -23,40 +17,55 @@ idade = 25
 print(f"O nome do aluno é {nome} e ele tem {idade} anos.")
 ```
 
-Neste exemplo, a f-string é usada para incluir as variáveis `nome` e `idade` diretamente dentro da string, de forma simples e eficiente.
+Saída: `O nome do aluno é João e ele tem 25 anos.`
+
+Antes das f-strings, o jeito comum era usar `.format()` ou o operador `%`, que são mais verbosos:
+
+```python
+# Com .format()
+print("O nome do aluno é {} e ele tem {} anos.".format(nome, idade))
+
+# Com %
+print("O nome do aluno é %s e ele tem %d anos." % (nome, idade))
+```
+
+As três formas produzem o mesmo resultado, mas a f-string é mais limpa e fácil de ler — especialmente quando você tem muitas variáveis.
+
+Você também pode fazer operações diretamente dentro das chaves:
+
+```python
+preco = 49.9
+print(f"Total: R$ {preco * 1.1:.2f}")  # Aplica 10% e formata com 2 casas decimais
+```
+
+Saída: `Total: R$ 54.89`
 
 ---
 
-## Comando de Entrada Padrão: `input()`
+## Capturando dados com input()
 
-O comando `input()` em Python é utilizado para capturar dados do usuário através da entrada padrão (teclado). Ele suspende a execução do programa até que o usuário forneça uma entrada e pressione a tecla `<enter>`.
+`input()` pausa o programa e espera o usuário digitar algo. Quando o usuário pressiona Enter, o valor digitado é retornado como **string**.
 
-### Sintaxe do `input()`:
-- **`input()`**: Aguarda a entrada do usuário e retorna o valor fornecido como uma string.
-- **`input(mensagem)`**: Exibe uma mensagem na tela antes de esperar pela entrada do usuário.
+```python
+nome = input("Digite seu nome: ")
+print(f"Olá, {nome}!")
+```
 
-### Exemplos:
+Como o retorno é sempre string, se você precisar de um número, precisa converter explicitamente:
 
-1. **Uso simples do `input()`**:
-   
-   ```python
-   aluno = input()
-   ```
+```python
+idade = int(input("Digite sua idade: "))
+altura = float(input("Digite sua altura: "))
+```
 
-   Neste caso, o programa irá esperar que o usuário forneça uma entrada e pressione `<enter>`.
+- `int()` converte para número inteiro.
+- `float()` converte para número decimal.
 
-2. **Uso do `input()` com mensagem**:
-   
-   ```python
-   aluno = input("Digite o nome do aluno: ")
-   ```
-
-   Aqui, uma mensagem é exibida para o usuário, e a entrada será solicitada com base nesse prompt.
+Se o usuário digitar algo que não pode ser convertido (por exemplo, letras onde se espera um número), o Python vai lançar um erro. Por enquanto, basta saber que isso pode acontecer — tratamento de erros fica para um próximo post.
 
 ---
 
-### Conclusão
+## Resumo
 
-As f-strings são uma excelente escolha para formatação de strings em Python, oferecendo tanto eficiência quanto clareza no código. Já o comando `input()` é fundamental para interagir com o usuário, capturando dados de forma simples e direta.
-
----
+- Use f-strings com `f"texto {variavel}"` para montar strings de forma simples.
+- `input()` sempre retorna uma string — converta com `int()` ou `float()` quando precisar de números.

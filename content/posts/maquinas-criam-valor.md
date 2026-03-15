@@ -2,41 +2,52 @@
 title: "Máquinas Criam Valor? Tecnologia, Trabalho e a Ideologia do Capital"
 date: '2025-02-03T23:24:07-03:00'
 draft: false
-description: "Um olhar crítico sobre tecnologia, trabalho e a narrativa da automação como criadora de valor."
+description: "A automação e a IA estão tomando o lugar dos trabalhadores e criando valor por conta própria. Mas será que isso é verdade?"
 tags: ["tecnologia", "trabalho", "marxismo", "inteligência artificial"]
 categories: ["Reflexões"]
 ---
 
 ## Máquinas Criam Valor? Tecnologia, Trabalho e a Ideologia do Capital
 
-No mundo contemporâneo, onde a inteligência artificial e a automação avançam a passos largos, é comum ouvirmos que as máquinas estão tomando o lugar dos humanos e gerando valor por conta própria. Mas será que isso é realmente verdade? Se olharmos a fundo, percebemos que essa ideia reforça uma narrativa conveniente para o capital, ocultando a verdadeira fonte da criação de valor na economia.
+É cada vez mais comum ouvir que as máquinas estão substituindo humanos e gerando riqueza por conta própria. Robôs nas fábricas, algoritmos tomando decisões, inteligência artificial escrevendo textos. A narrativa é sedutora: a tecnologia cria valor, e os humanos ficam cada vez mais dispensáveis.
 
-### O Trabalho Humano e o Excedente Econômico
+Mas essa ideia tem um problema. Ela esconde algo fundamental sobre como o valor econômico é, de fato, produzido.
 
-A teoria marxista do mais-valor nos ensina que o lucro no capitalismo não surge do nada, mas sim do tempo de trabalho excedente dos trabalhadores. Em outras palavras, o capitalista paga um salário, mas a força de trabalho gera um valor superior ao que recebe, e essa diferença se torna lucro. Máquinas, ferramentas e infraestrutura são essenciais para a produção, mas não criam mais-valor — elas apenas transferem para os produtos o custo do seu próprio desgaste.
+### De onde vem o lucro?
 
-Se uma fábrica investe em robôs para aumentar a produtividade, o que acontece não é a "criação" de valor pelas máquinas, mas uma reorganização do trabalho. Os robôs permitem que os capitalistas produzam mais em menos tempo, reduzindo o custo por unidade e ampliando a margem de lucro. No entanto, o lucro continua derivando do trabalho humano, pois são os trabalhadores que projetam, operam e mantêm essas máquinas, além de consumirem os produtos no mercado.
+Aqui entra uma ideia central do marxismo, especialmente a análise de Marx em *O Capital*: o lucro não surge das máquinas, dos galpões ou dos computadores. Ele vem do **trabalho humano**.
 
-### A Ilusão da Inteligência Artificial
+A lógica funciona assim: o capitalista contrata um trabalhador e paga um salário. Mas esse trabalhador produz, durante sua jornada, um valor **maior** do que recebe de volta como salário. Essa diferença — o excedente — é o que Marx chama de **mais-valor**, e é daí que vem o lucro.
 
-Com o avanço das inteligências artificiais, surge uma nova roupagem para o velho argumento:
-*"Agora sim as máquinas criam valor, pois tomam decisões e executam tarefas complexas."*
+E as máquinas? Elas são úteis, aumentam a produtividade, mas não criam valor novo. O que elas fazem é transferir para o produto o custo do próprio desgaste. Uma máquina que custou R$ 100 mil e vai durar 10 anos agrega aproximadamente R$ 10 mil por ano ao que produz — só isso.
 
-No entanto, o que estamos vendo é uma mudança no tipo de trabalho humano envolvido. Redes neurais não se treinam sozinhas, algoritmos não se ajustam sem supervisão e a infraestrutura computacional não se mantém sem uma rede global de trabalhadores.
+### E quando surgem os robôs?
 
-A IA é, em última análise, uma extensão do trabalho humano, programada para replicar padrões que já foram criados por pessoas. O que parece ser um sistema "autônomo" nada mais é do que um reflexo de processos humanos embutidos em código.
+Se uma fábrica substitui 10 trabalhadores por robôs, o que acontece? A produção aumenta, o custo por unidade cai, e o dono da fábrica lucra mais. Parece que a máquina "criou" riqueza.
 
-### A Ideologia do Capital e o Papel das Máquinas
+Mas olhando mais de perto: os robôs foram projetados por engenheiros, montados por operários, instalados por técnicos, e precisam de manutenção constante. O lucro extra não veio do robô em si — veio do trabalho de quem o construiu e mantém, e também do trabalho dos trabalhadores que ainda estão lá, agora com uma carga maior ou diferente.
 
-A crença de que as máquinas geram valor por si mesmas não é apenas um erro técnico, mas uma construção ideológica que reforça a lógica do capital. Se os donos das empresas podem argumentar que o valor não vem dos trabalhadores, mas das máquinas, eles justificam o rebaixamento de salários, a precarização do trabalho e a desvalorização da força produtiva humana.
+### E a inteligência artificial?
 
-Essa narrativa também contribui para um conformismo social, levando-nos a aceitar que a automação é um fenômeno natural e inevitável, e não uma escolha política e econômica. No entanto, a história mostra que as máquinas nunca eliminaram o trabalho humano — elas apenas o transformaram, deslocando pessoas de um setor para outro e criando novas formas de exploração.
+Com a IA, o argumento se atualiza: *"Agora sim as máquinas criam valor, pois tomam decisões complexas e até produzem conteúdo."*
+
+Mas redes neurais não se treinam sozinhas. Alguém coleta os dados, alguém rotula, alguém avalia os resultados, alguém mantém a infraestrutura rodando. A IA é, no fundo, uma destilação de trabalho humano prévio — textos escritos por pessoas, imagens fotografadas por pessoas, código escrito por pessoas. Ela replica padrões, mas não pensa, não cria do nada.
+
+O que parece autônomo carrega, embutido em seu funcionamento, camadas e camadas de trabalho humano invisível.
+
+### Por que essa narrativa interessa ao capital?
+
+Se as máquinas criam valor, os trabalhadores viram um custo desnecessário. Isso justifica salários menores, mais automação sem dividir os ganhos, e a ideia de que a pobreza de quem foi demitido é culpa da tecnologia — não de uma escolha política e econômica.
+
+É uma narrativa conveniente. E Bourdieu diria que ela funciona porque a aceitamos como natural, inevitável, como se a tecnologia tivesse uma lógica própria desligada de quem a controla.
+
+Mas automação não é um fenômeno da natureza. É uma decisão. E os ganhos que ela gera são uma escolha de quem vai ficar com eles.
 
 ### Conclusão
 
-Se queremos entender de onde vem o valor no mundo digital e automatizado de hoje, precisamos olhar além das aparências. As máquinas podem substituir certas tarefas, mas a criatividade, a adaptação e a capacidade de inovação continuam sendo exclusivas dos trabalhadores.
+As máquinas ampliam o que os humanos conseguem fazer. Isso é real e tem imenso valor prático. Mas a riqueza que elas ajudam a produzir continua vindo do trabalho — de quem projeta, opera, mantém e consome.
 
-O que está em jogo não é apenas um debate teórico, mas uma questão fundamental sobre como enxergamos o trabalho e o papel da tecnologia na sociedade.
+Entender isso não é nostalgismo ou rejeição à tecnologia. É reconhecer que, por trás de todo sistema automatizado, há pessoas — e que os frutos desse trabalho coletivo precisam ser distribuídos de forma mais justa.
 
 > **Afinal, quem realmente produz a riqueza?**
 

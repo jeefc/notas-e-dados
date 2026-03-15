@@ -2,42 +2,37 @@
 title: "Estruturas de Controle em Python"
 date: '2025-02-04T00:18:49-03:00'
 draft: false
-description: "Um guia prático sobre estruturas de controle em Python: condicionais, loops e boas práticas."
+description: "Como usar condicionais e loops em Python para controlar o fluxo do seu programa."
 tags: ["Python", "programação", "estruturas de controle"]
 categories: ["Estudos"]
 ---
 
 ## Estruturas de Controle em Python
 
-As **estruturas de controle** em Python permitem controlar o fluxo de execução do programa com base em **condições** e **repetições**. Neste post, veremos os principais conceitos com exemplos práticos.
+Estruturas de controle definem o caminho que o programa vai percorrer: se ele vai executar um bloco de código ou não, e quantas vezes vai repetir uma operação. Em Python, isso é feito com condicionais e loops.
 
 ---
 
-## Comentários em Python
+## Comentários
 
-Comentários ajudam na legibilidade do código e são ignorados pelo interpretador.
+Antes de entrar nos exemplos, vale lembrar: comentários são ignorados pelo Python e servem para explicar o código.
 
-- Comentários de **linha única** usam `#`:
 ```python
-# Isso é um comentário
-print("Olá, mundo!")  # Comentário no final da linha
-```
+# Isso é um comentário de linha única
 
-- Comentários de **múltiplas linhas** usam `'''` ou `"""`:
-```python
 '''
-Este é um comentário de múltiplas linhas.
-Ele pode ser usado para documentar o código.
+Isso é um comentário
+de múltiplas linhas.
 '''
 ```
 
 ---
 
-## Estruturas Condicionais
+## Condicionais
 
-### `if`: Estrutura de Seleção Simples
+### if
 
-Usamos `if` para executar um bloco de código apenas se uma condição for verdadeira.
+Executa um bloco de código só se a condição for verdadeira.
 
 ```python
 valor = float(input("Entre com um valor: "))
@@ -45,9 +40,11 @@ if valor > 0:
     print(valor, "é maior do que zero.")
 ```
 
-### `if-else`: Estrutura de Seleção com Dois Ramos
+Se `valor` for menor ou igual a zero, nada acontece.
 
-O `else` permite executar um código alternativo quando a condição do `if` não for atendida.
+### if / else
+
+Adiciona um caminho alternativo caso a condição seja falsa.
 
 ```python
 valor = float(input("Entre com um valor: "))
@@ -57,9 +54,9 @@ else:
     print(valor, "é menor ou igual a zero.")
 ```
 
-### `if-elif-else`: Estrutura de Seleção com Múltiplos Ramos
+### if / elif / else
 
-Se tivermos mais de duas possibilidades, podemos usar `elif`:
+Quando há mais de duas possibilidades, use `elif` para checar condições adicionais:
 
 ```python
 nota = float(input("Digite sua nota: "))
@@ -74,35 +71,41 @@ else:
     print("Reprovado")
 ```
 
-### Condições Compostas
+O Python testa as condições de cima para baixo e para quando encontra a primeira verdadeira.
 
-Podemos combinar condições com `and`, `or` e intervalos:
+### Condições compostas
+
+Você pode combinar condições com `and` e `or`:
 
 ```python
 if 10 <= valor <= 20:
-    print(valor, "está dentro do intervalo [10,20].")
+    print(valor, "está dentro do intervalo [10, 20].")
 
-if (valor < 0) or (valor > 30):
-    print(valor, "está fora do intervalo [0,30].")
+if valor < 0 or valor > 30:
+    print(valor, "está fora do intervalo [0, 30].")
 ```
 
 ---
 
-## Estruturas de Repetição
+## Loops
 
-### `while`: Repetição Indefinida
+### while — repete enquanto a condição for verdadeira
 
-Usamos `while` quando **não sabemos quantas vezes** a repetição deve ocorrer.
+Use `while` quando não sabe com antecedência quantas vezes vai repetir.
 
 ```python
 indice = 1
 while indice <= 10:
     print(indice, end=' ')
     indice += 1
-print()  # Quebra de linha
+print()
 ```
 
-Exemplo: **Cálculo de fatorial usando `while`**
+Saída: `1 2 3 4 5 6 7 8 9 10`
+
+Cuidado: se a condição nunca se tornar falsa, o loop roda para sempre. Sempre garanta que algo dentro do loop vai mudar o estado da condição.
+
+**Exemplo prático — fatorial com while:**
 
 ```python
 num = int(input('Digite um número inteiro positivo: '))
@@ -114,28 +117,32 @@ while i <= num:
 print('O fatorial de', num, '=', fat)
 ```
 
-### `for`: Repetição Definida
+### for — repete um número definido de vezes
 
-Usamos `for` quando **sabemos quantas vezes** queremos repetir algo.
+Use `for` quando sabe quantas iterações quer fazer, ou quando quer percorrer uma sequência.
 
 ```python
 for i in range(1, 11):
-    print(i, end=' ')  # Imprime números de 1 a 10
+    print(i, end=' ')
 print()
 ```
 
-#### Criando Listas com `range()`
+Saída: `1 2 3 4 5 6 7 8 9 10`
 
-A função `range()` gera sequências numéricas:
+### range()
+
+`range()` gera sequências numéricas. Ele aceita até três argumentos: `range(início, fim, passo)`.
 
 ```python
-print(list(range(5)))          # [0, 1, 2, 3, 4]
-print(list(range(8, 13)))      # [8, 9, 10, 11, 12]
-print(list(range(1, 30, 5)))   # [1, 6, 11, 16, 21, 26]
-print(list(range(5, -14, -3))) # [5, 2, -1, -4, -7, -10, -13]
+range(5)           # 0, 1, 2, 3, 4
+range(8, 13)       # 8, 9, 10, 11, 12
+range(1, 30, 5)    # 1, 6, 11, 16, 21, 26
+range(5, -14, -3)  # 5, 2, -1, -4, -7, -10, -13
 ```
 
-Exemplo: **Cálculo de fatorial usando `for`**
+O valor de `fim` nunca é incluído. Passo negativo percorre a sequência de trás para frente.
+
+**Exemplo prático — fatorial com for:**
 
 ```python
 num = int(input('Digite um número inteiro positivo: '))
@@ -147,12 +154,12 @@ print('O fatorial de', num, '=', fat)
 
 ---
 
-## Conclusão
+## Resumo
 
-As **estruturas de controle** são fundamentais para construir programas dinâmicos e eficientes. Neste post, cobrimos:
-
-- Condicionais: `if`, `if-else`, `if-elif-else`
-- Laços de repetição: `while` e `for`
-- Função `range()` para gerar sequências
-
----
+| Estrutura | Quando usar |
+|---|---|
+| `if` | Executar algo apenas se uma condição for verdadeira |
+| `if/else` | Dois caminhos possíveis |
+| `if/elif/else` | Três ou mais caminhos possíveis |
+| `while` | Repetir enquanto uma condição for verdadeira |
+| `for` | Repetir um número definido de vezes ou percorrer uma sequência |
