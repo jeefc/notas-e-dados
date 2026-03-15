@@ -1,24 +1,22 @@
 ---
 title: 'Jeferson Lica'
-description: 'Estudante de Computação na UFF. Escrevo sobre programação, dados e tecnologia — com alguma filosofia no meio.'
+description: 'Técnico de TI e estudante de Computação na UFF. Escrevo sobre o desenvolvimento de sistemas reais, dados e tecnologia.'
 ---
 
 <img src="/minhafoto.jpg" alt="Jeferson Lica" style="width: 160px; height: 160px; border-radius: 50%; display: block; margin: 0 auto; object-fit: cover;">
 
-## Sobre mim
+# Jeferson Lica
 
-Sou estudante de Computação na [UFF](https://www.uff.br/). Antes de entrar na faculdade, trabalhei vários anos na área de TI — suporte técnico, hardware, redes. Foi por aí que o interesse por computação virou algo sério.
+Comecei na área de TI cedo — manutenção de computadores, lan house, loja de informática. Com o tempo fui migrando para ambientes mais complexos: redes corporativas, VPN, interligação de unidades com antenas Ubiquiti, implantação e treinamento de ERP. Hoje trabalho como técnico de TI no Hotel Fasano Angra dos Reis e estudo Computação pela UFF.
 
-Este blog existe para registrar o que estou aprendendo. Nada mais sofisticado do que isso.
+No meio disso tudo, comecei a estudar programação de verdade. Atualmente desenvolvo projetos assistidos por IA que já estão em uso: um sistema de RH em Django, um PDV em Next.js para varejo, projetos com Firebase. Estudo programação, matemática e ferramentas de IA com regularidade — e sinto que quanto mais aprendo, mais clareza tenho sobre o que ainda falta aprender.
 
-## O que tem por aqui
+Este blog existe para registrar esse caminho. Não é um portal, não é um currículo disfarçado. É um caderno aberto. Tem código, tem dado, e tem texto sobre tecnologia quando ela merece ser pensada além da tela.
 
-- **Estudos técnicos** — Python, SQL, análise de dados, o que estiver na grade ou no caminho.
-- **Reflexões** — Tecnologia não existe no vácuo. Às vezes vale pensar no contexto maior.
+Se você chegou até aqui por algum motivo parecido com o meu, provavelmente vai encontrar algo útil por aqui.
 
 ## Contato
-
-**Email:** [jefersonlica@id.uff.br](mailto:jefersonlica@id.uff.br)
+**Email:** jefersonlica@id.uff.br
 
 {{< social >}}
 
