@@ -1,1 +1,30 @@
-{{- partial "social_icons.html" (dict "align" "center") -}}
+<style>
+.bio-social {
+    display: flex;
+    gap: 14px;
+    margin-top: 5px;
+}
+.bio-social a {
+    box-shadow: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    transition: transform 0.2s;
+}
+.bio-social a:hover {
+    transform: translateY(-2px);
+}
+.bio-social svg {
+    width: 24px;
+    height: 24px;
+}
+</style>
+
+<div class="bio-social">
+    {{- range site.Params.socialIcons }}
+        {{- if ne .name "email" }}
+        <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer" title="{{ (.title | default .name) | title }}">
+            {{ partial "svg.html" . }}
+        </a>
+        {{- end }}
+    {{- end }}
+</div>

@@ -20,8 +20,6 @@ Este blog existe para registrar o que estou aprendendo. Nada mais sofisticado do
 
 **Email:** [jefersonlica@id.uff.br](mailto:jefersonlica@id.uff.br)
 
-<div style="margin-top: 20px;">
 {{< social >}}
-</div>
 
 ---
