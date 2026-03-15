@@ -1,24 +1,33 @@
 <style>
-/* Força o alinhamento à esquerda e remove underlines/sombras de links no shortcode */
-.bio-social-container .social-icons {
-    display: flex !important;
-    justify-content: flex-start !important;
-    margin-top: 10px !important;
-    padding: 0 !important;
+/* Força o alinhamento à esquerda e customiza o espaçamento */
+.bio-social-icons {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
-.bio-social-container .social-icons a {
+.bio-social-icons .social-icons {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.bio-social-icons .social-icons a {
+    margin: 0 15px 0 0 !important; /* Espaçamento entre os ícones */
     box-shadow: none !important;
     text-decoration: none !important;
     border: none !important;
-    margin: 0 12px 0 0 !important; /* Espaçamento entre ícones */
-}
-/* Esconde o ícone de email especificamente nesta página */
-.bio-social-container .social-icons a[title^="Email"],
-.bio-social-container .social-icons a[title^="email"] {
-    display: none !important;
 }
 </style>
 
-<div class="bio-social-container">
-    {{- partial "social_icons.html" site.Params.socialIcons -}}
+<div class="bio-social-icons">
+    <div class="social-icons">
+        {{- range site.Params.socialIcons }}
+            {{- if ne .name "email" }}
+            <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}">
+                {{ partial "svg.html" . }}
+            </a>
+            {{- end }}
+        {{- end }}
+    </div>
 </div>

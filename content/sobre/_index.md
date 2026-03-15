@@ -3,7 +3,7 @@ title: 'Jeferson Lica'
 description: 'Técnico de TI e estudante de Computação na UFF. Escrevo sobre o desenvolvimento de sistemas reais, dados e tecnologia.'
 ---
 
-<img src="/minhafoto.jpg" alt="Jeferson Lica" style="width: 160px; height: 160px; border-radius: 50%; display: block; margin: 0 auto; object-fit: cover;">
+<img src="/minhafoto.jpg" alt="Jeferson Lica" style="width: 160px; height: 160px; border-radius: 50%; display: block; margin: 0 auto 35px auto; object-fit: cover;">
 
 Comecei na área de TI cedo — manutenção de computadores, lan house, loja de informática. Com o tempo fui migrando para ambientes mais complexos: redes corporativas, VPN, interligação de unidades com antenas Ubiquiti, implantação e treinamento de ERP. Hoje trabalho como técnico de TI no Hotel Fasano Angra dos Reis e estudo Computação pela UFF.
 
