@@ -10,6 +10,12 @@ languages:
 title: Notas e Dados
 theme: PaperMod
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   env: production
   assets:
@@ -72,6 +78,11 @@ menu:
       name: arquivo
       url: /archives/
       weight: 5
+
+    - identifier: search
+      name: busca
+      url: /search/
+      weight: 6
 
 
 
