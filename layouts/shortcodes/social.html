@@ -1,43 +1,24 @@
 <style>
-.bio-social {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+/* Força o alinhamento à esquerda e remove underlines/sombras de links no shortcode */
+.bio-social-container .social-icons {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-top: 10px !important;
+    padding: 0 !important;
 }
-.bio-social a {
-    color: var(--secondary);
-    transition: transform 0.2s, color 0.2s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none !important;
+.bio-social-container .social-icons a {
     box-shadow: none !important;
+    text-decoration: none !important;
     border: none !important;
+    margin: 0 12px 0 0 !important; /* Espaçamento entre ícones */
 }
-.bio-social a:hover {
-    transform: translateY(-2px);
-    color: var(--primary);
-}
-.bio-social svg {
-    width: 26px;
-    height: 26px;
-    stroke: currentColor;
-    fill: none;
+/* Esconde o ícone de email especificamente nesta página */
+.bio-social-container .social-icons a[title^="Email"],
+.bio-social-container .social-icons a[title^="email"] {
+    display: none !important;
 }
 </style>
 
-<div class="bio-social">
-    <a href="https://github.com/jeefc" target="_blank" rel="noopener noreferrer" title="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-        </svg>
-    </a>
-    <a href="https://www.linkedin.com/in/jefersoncostalica/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-        </svg>
-    </a>
+<div class="bio-social-container">
+    {{- partial "social_icons.html" site.Params.socialIcons -}}
 </div>
