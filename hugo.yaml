@@ -30,18 +30,12 @@ params:
   defaultTheme: auto
 
   homeInfoParams:
-    Title: Bem-vindo ao meu Blog
+    Title: Notas e Dados
     Content: |
-      <br>
-      Olá! Meu nome é <a href="/sobre/">Jeferson</a>, e este é meu espaço para documentar aprendizados e reflexões.<br>
-      Aqui você acompanha meus estudos, notas pessoais e projetos futuros:<br><br>
-      <ul style="list-style: disc; margin-left: 20px;">
-        <li><strong>Estudos:</strong> Explorando Computação, Análise de Dados e Desenvolvimento de Software.</li>
-        <li><strong>Notas Pessoais:</strong> Reflexões sobre filosofia, tecnologia e sociedade.</li>
-        <li><strong>Projetos:</strong> Experimentos, desafios e evolução na prática.</li>
-      </ul>
-      <br>
-      Compartilhar conhecimento é parte do processo. Vamos construir juntos?
+      Estudante de Computação na UFF, com passagem pela TI antes de entrar na faculdade.
+      Aqui registro o que estou aprendendo — programação, análise de dados e, de vez em quando, como a tecnologia se encaixa no mundo além das telas.
+      <br><br>
+      <a href="/sobre/">Sobre mim →</a>
 
   socialIcons:
     - name: "github"
