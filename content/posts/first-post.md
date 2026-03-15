@@ -1,25 +1,25 @@
 ---
-title: "Introdução: Bem-vindo ao Notas e Dados"
+title: "Por que decidi criar o Notas e Dados?"
 date: 2025-02-03T10:00:00-03:00
 draft: false
-description: "Meu espaço para registrar aprendizados, anotações e projetos em tecnologia e além."
+description: "Um pouco sobre o motivo de eu ter começado este espaço e o que pretendo compartilhar por aqui."
 tags: ["geral"]
 categories: ["Geral"]
 ---
 
-Olá, seja bem-vindo ao **Notas e Dados**!
+Fala pessoal, beleza?
 
-Este é o primeiro post do meu blog, um espaço criado para documentar a minha jornada de estudos, reflexões e projetos na área de tecnologia. Aqui, você encontrará:
+Este é o meu primeiro post por aqui. A ideia de criar o **Notas e Dados** não é inventar a roda ou lançar um grande portal de tecnologia. É simplesmente ter um espaço meu para registrar as coisas que vou aprendendo no dia a dia.
 
-- **Notas de estudo:** Registros dos meus aprendizados em Computação, Análise de Dados e Desenvolvimento de Software.
-- **Reflexões pessoais:** Pensamentos e insights que surgem ao longo do caminho, inspirados pela tecnologia e pela filosofia.
-- **Projetos e experimentos:** Ideias e iniciativas que me ajudam a transformar desafios em oportunidades.
+Trabalhei um bom tempo com TI — prestando suporte, lidando com infraestrutura, fuçando em tudo um pouco — e agora estou focado na graduação em Computação na UFF e me aprofundando em análise de dados. E como a gente sabe, na nossa área, ou você anota o que aprende, ou na semana seguinte já esqueceu como aquele código funcionava.
 
-Minha intenção é que este blog seja um diário de evolução – um lugar onde eu possa registrar os pequenos e grandes passos dessa trajetória, compartilhar ideias e, espero, inspirar outros a também seguir seus caminhos de aprendizagem e crescimento.
+Então, o que vai rolar por aqui?
+- **Anotações técnicas:** Resumos práticos de linguagens (principalmente Python e SQL), código, ferramentas e um pouco de base matemática quando necessário.
+- **Ideias e reflexões:** Acho perigoso quando a gente fica bitolado só no código e no terminal. Então também gosto de trazer reflexões sobre o impacto da tecnologia na sociedade, como ela afeta o trabalho e as relações humanas. Fica um pouco mais teórico, mas prometo que faz sentido na prática.
 
-Ao longo do tempo, pretendo aprofundar temas relevantes, discutir as mudanças que a tecnologia traz para o nosso mundo e, de maneira sincera, relatar os altos e baixos dessa jornada de constante evolução. Afinal, acredito que o aprendizado é um processo contínuo e, juntos, podemos transformar cada desafio em uma nova conquista.
+O objetivo principal é documentar a minha própria evolução. Mas se algo do que eu jogar aqui ajudar você a resolver um problema, entender um conceito ou só parar pra pensar um pouco, o blog já cumpriu a missão.
 
-Fique à vontade para explorar, comentar e compartilhar suas experiências. Vamos construir juntos um espaço de diálogo e crescimento!
+Valeu por aparecer. Fique à vontade para explorar os textos e códigos.
 
-Até a próxima,
+Até mais,
 **Jeferson Lica**

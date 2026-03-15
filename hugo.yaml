@@ -30,12 +30,12 @@ params:
   defaultTheme: auto
 
   homeInfoParams:
-    Title: Notas e Dados
+    Title: "Oi, eu sou o Jeferson."
     Content: |
       Estudante de Computação na UFF, com passagem pela TI antes de entrar na faculdade.
       Aqui registro o que estou aprendendo — programação, análise de dados e, de vez em quando, como a tecnologia se encaixa no mundo além das telas.
       <br><br>
-      <a href="/sobre/">Sobre mim →</a>
+      <a href="/posts/first-post/">Por que criei esse espaço? →</a>
 
   socialIcons:
     - name: "github"
