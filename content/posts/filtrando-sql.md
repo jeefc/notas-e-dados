@@ -7,13 +7,13 @@ tags: ["SQL"]
 categories: ["Estudos"]
 ---
 
-## SQL: Filtrando Dados com WHERE, AND, OR e IN  
+## SQL: Filtrando Dados com WHERE, AND, OR e IN
 
-Ao trabalhar com bancos de dados, muitas vezes precisamos recuperar apenas um subconjunto de informações. Para isso, utilizamos o **comando `WHERE`**, que permite definir condições dentro de uma consulta `SELECT`.  
+Ao trabalhar com bancos de dados, muitas vezes precisamos recuperar apenas um subconjunto de informações. Para isso, utilizamos o **comando `WHERE`**, que permite definir condições dentro de uma consulta `SELECT`.
 
-### 🔍 Usando `WHERE` para Filtrar Resultados  
+### Usando `WHERE` para Filtrar Resultados
 
-O comando `WHERE` é usado para especificar quais registros devem ser retornados com base em uma condição.  
+O comando `WHERE` é usado para especificar quais registros devem ser retornados com base em uma condição.
 
 ```sql
 SELECT name, age
@@ -21,15 +21,15 @@ FROM employees
 WHERE age > 30;
 ```
 
-Esse comando retorna todos os funcionários com idade superior a 30 anos.  
+Esse comando retorna todos os funcionários com idade superior a 30 anos.
 
-### ⚡ Operadores Comuns  
+### Operadores Comuns
 
-Os operadores mais usados em `WHERE` são:  
+Os operadores mais usados em `WHERE` são:
 
-- **`=`, `>`, `<`, `>=`, `<=`, `<>`**: Para comparações básicas.  
+- **`=`, `>`, `<`, `>=`, `<=`, `<>`**: Para comparações básicas.
 
-#### ❌ Operador de negação  
+#### Operador de negação
 
 Para excluir um valor específico, podemos usar `!=` ou `<>`:
 
@@ -37,6 +37,7 @@ Para excluir um valor específico, podemos usar `!=` ou `<>`:
 SELECT * FROM STATION_DATA
 WHERE year != 2010;
 ```
+
 Ou, de forma equivalente:
 
 ```sql
@@ -44,9 +45,9 @@ SELECT * FROM STATION_DATA
 WHERE year <> 2010;
 ```
 
-Ambas as consultas retornam todos os registros **exceto** aqueles onde o ano é 2010.  
+Ambas as consultas retornam todos os registros **exceto** aqueles onde o ano é 2010.
 
-#### 📅 `BETWEEN`: Selecionando Intervalos  
+#### `BETWEEN`: Selecionando Intervalos
 
 Se precisarmos buscar registros dentro de um intervalo de valores, podemos usar `BETWEEN`:
 
@@ -55,28 +56,28 @@ SELECT * FROM STATION_DATA
 WHERE year BETWEEN 2005 AND 2010;
 ```
 
-Essa consulta retorna todos os registros entre os anos **2005 e 2010**, incluindo ambos.  
+Essa consulta retorna todos os registros entre os anos **2005 e 2010**, incluindo ambos.
 
-#### 🔎 `LIKE`: Buscando Padrões  
+#### `LIKE`: Buscando Padrões
 
-Quando queremos encontrar registros com base em padrões de texto, usamos `LIKE`.  
+Quando queremos encontrar registros com base em padrões de texto, usamos `LIKE`.
 
 ```sql
 SELECT * FROM customers WHERE name LIKE 'J%';
 ```
 
-Nesse caso, a consulta retorna **todos os clientes cujo nome começa com "J"**.  
+Nesse caso, a consulta retorna **todos os clientes cujo nome começa com "J"**.
 
-- `%` representa **qualquer sequência de caracteres**.  
-- `_` representa **um único caractere**.  
+- `%` representa **qualquer sequência de caracteres**.
+- `_` representa **um único caractere**.
 
-Por exemplo, `LIKE 'J_n%'` retornaria nomes como **"John"**, mas não **"Jordan"**.  
+Por exemplo, `LIKE 'J_n%'` retornaria nomes como **"John"**, mas não **"Jordan"**.
 
 ---
 
-## 🎯 Combinando Condições: `AND`, `OR` e `IN`  
+## Combinando Condições: `AND`, `OR` e `IN`
 
-### ✅ `IN`: Comparação com uma Lista de Valores  
+### `IN`: Comparação com uma Lista de Valores
 
 Se quisermos verificar se um valor pertence a um conjunto específico, podemos usar `IN`:
 
@@ -84,11 +85,11 @@ Se quisermos verificar se um valor pertence a um conjunto específico, podemos u
 SELECT * FROM orders WHERE status IN ('Completed', 'Pending');
 ```
 
-Essa consulta retorna todos os pedidos que estão com status **"Completed"** ou **"Pending"**.  
+Essa consulta retorna todos os pedidos que estão com status **"Completed"** ou **"Pending"**.
 
-### 🔗 `AND`: Múltiplos Critérios  
+### `AND`: Múltiplos Critérios
 
-O operador `AND` exige que **todas** as condições sejam verdadeiras para que um registro seja retornado.  
+O operador `AND` exige que **todas** as condições sejam verdadeiras para que um registro seja retornado.
 
 ```sql
 SELECT * FROM STATION_DATA
@@ -102,27 +103,27 @@ SELECT * FROM STATION_DATA
 WHERE year > 2005 AND year < 2010;
 ```
 
-Agora, apenas os anos **2006, 2007, 2008 e 2009** serão retornados.  
+Agora, apenas os anos **2006, 2007, 2008 e 2009** serão retornados.
 
-### 🔀 `OR`: Qualquer Critério Aceito  
+### `OR`: Qualquer Critério Aceito
 
-Diferente do `AND`, o `OR` retorna registros se **pelo menos uma** das condições for verdadeira.  
+Diferente do `AND`, o `OR` retorna registros se **pelo menos uma** das condições for verdadeira.
 
 ```sql
 SELECT * FROM STATION_DATA
 WHERE year = 2005 OR year = 2010;
 ```
 
-Aqui, a consulta retornará **todos os registros do ano 2005 e do ano 2010**.  
+Aqui, a consulta retornará **todos os registros do ano 2005 e do ano 2010**.
 
 ---
 
-## 🔥 Conclusão  
+## Conclusão
 
-Dominar o uso do `WHERE` e seus operadores auxilia na **extração precisa de dados** em bancos de dados SQL.  
+Dominar o uso do `WHERE` e seus operadores auxilia na **extração precisa de dados** em bancos de dados SQL.
 
-- Use `BETWEEN` para intervalos.  
-- Utilize `LIKE` para buscas por padrões.  
-- Combine `AND`, `OR` e `IN` para filtros mais poderosos.  
+- Use `BETWEEN` para intervalos.
+- Utilize `LIKE` para buscas por padrões.
+- Combine `AND`, `OR` e `IN` para filtros mais poderosos.
 
 Saber estruturar bem essas consultas pode melhorar o desempenho e a eficiência ao trabalhar com grandes volumes de dados.

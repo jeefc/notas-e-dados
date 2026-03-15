@@ -13,7 +13,7 @@ As **estruturas de controle** em Python permitem controlar o fluxo de execução
 
 ---
 
-## 📌 Comentários em Python  
+## Comentários em Python
 
 Comentários ajudam na legibilidade do código e são ignorados pelo interpretador.
 
@@ -33,9 +33,9 @@ Ele pode ser usado para documentar o código.
 
 ---
 
-## ⚡ Estruturas Condicionais
+## Estruturas Condicionais
 
-### 🛠️ `if`: Estrutura de Seleção Simples  
+### `if`: Estrutura de Seleção Simples
 
 Usamos `if` para executar um bloco de código apenas se uma condição for verdadeira.
 
@@ -45,7 +45,7 @@ if valor > 0:
     print(valor, "é maior do que zero.")
 ```
 
-### 🔄 `if-else`: Estrutura de Seleção com Dois Ramos  
+### `if-else`: Estrutura de Seleção com Dois Ramos
 
 O `else` permite executar um código alternativo quando a condição do `if` não for atendida.
 
@@ -57,7 +57,7 @@ else:
     print(valor, "é menor ou igual a zero.")
 ```
 
-### 🔗 `if-elif-else`: Estrutura de Seleção com Múltiplos Ramos  
+### `if-elif-else`: Estrutura de Seleção com Múltiplos Ramos
 
 Se tivermos mais de duas possibilidades, podemos usar `elif`:
 
@@ -74,7 +74,7 @@ else:
     print("Reprovado")
 ```
 
-### 🔍 Condições Compostas  
+### Condições Compostas
 
 Podemos combinar condições com `and`, `or` e intervalos:
 
@@ -88,9 +88,9 @@ if (valor < 0) or (valor > 30):
 
 ---
 
-## 🔄 Estruturas de Repetição
+## Estruturas de Repetição
 
-### 🔁 `while`: Repetição Indefinida  
+### `while`: Repetição Indefinida
 
 Usamos `while` quando **não sabemos quantas vezes** a repetição deve ocorrer.
 
@@ -114,17 +114,17 @@ while i <= num:
 print('O fatorial de', num, '=', fat)
 ```
 
-### 🔄 `for`: Repetição Definida  
+### `for`: Repetição Definida
 
 Usamos `for` quando **sabemos quantas vezes** queremos repetir algo.
 
 ```python
-for i in range(1, 11):  
+for i in range(1, 11):
     print(i, end=' ')  # Imprime números de 1 a 10
 print()
 ```
 
-#### 🧮 Criando Listas com `range()`
+#### Criando Listas com `range()`
 
 A função `range()` gera sequências numéricas:
 
@@ -147,12 +147,12 @@ print('O fatorial de', num, '=', fat)
 
 ---
 
-## 🎯 Conclusão  
+## Conclusão
 
 As **estruturas de controle** são fundamentais para construir programas dinâmicos e eficientes. Neste post, cobrimos:
 
-✅ Condicionais: `if`, `if-else`, `if-elif-else`  
-✅ Laços de repetição: `while` e `for`  
-✅ Função `range()` para gerar sequências  
+- Condicionais: `if`, `if-else`, `if-elif-else`
+- Laços de repetição: `while` e `for`
+- Função `range()` para gerar sequências
 
 ---

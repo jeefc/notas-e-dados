@@ -24,10 +24,10 @@ params:
   defaultTheme: auto
 
   homeInfoParams:
-    Title: 👋 Bem-vindo ao meu Blog!
+    Title: Bem-vindo ao meu Blog
     Content: |
       <br>
-      Olá! Meu nome é <a href="/sobre/">Jeferson</a>, e este é meu espaço para documentar aprendizados e reflexões. 📚<br>
+      Olá! Meu nome é <a href="/sobre/">Jeferson</a>, e este é meu espaço para documentar aprendizados e reflexões.<br>
       Aqui você acompanha meus estudos, notas pessoais e projetos futuros:<br><br>
       <ul style="list-style: disc; margin-left: 20px;">
         <li><strong>Estudos:</strong> Explorando Computação, Análise de Dados e Desenvolvimento de Software.</li>
@@ -35,7 +35,7 @@ params:
         <li><strong>Projetos:</strong> Experimentos, desafios e evolução na prática.</li>
       </ul>
       <br>
-      Compartilhar conhecimento é parte do processo. Vamos construir juntos? 🔍
+      Compartilhar conhecimento é parte do processo. Vamos construir juntos?
 
   socialIcons:
     - name: "github"

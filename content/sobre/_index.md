@@ -27,6 +27,6 @@ Agora, no caminho acadêmico, vejo cada disciplina como uma peça essencial para
 
 Este espaço é uma forma de estruturar meu aprendizado, compartilhar descobertas e construir um diálogo com quem também acredita na tecnologia como ferramenta de mudança. Se você se identifica com essa busca, seja bem-vindo.  
 
-📩 **Quer trocar experiências?** [Entre em contato comigo](jefersonlica@id.uff.br).
+**Quer trocar experiências?** [Entre em contato comigo](mailto:jefersonlica@id.uff.br).
 
 ---
