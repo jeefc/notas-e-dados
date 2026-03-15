@@ -14,7 +14,6 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON
 
 params:
   env: production
@@ -74,15 +73,7 @@ menu:
       url: /tags/
       weight: 4
 
-    - identifier: archive
-      name: arquivo
-      url: /archives/
-      weight: 5
 
-    - identifier: search
-      name: busca
-      url: /search/
-      weight: 6
 
 
 

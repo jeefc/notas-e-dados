@@ -3,7 +3,7 @@ title: "F-strings e input() em Python"
 date: 2025-02-04T03:12:24-03:00
 draft: false
 description: "Como formatar strings de forma moderna com f-strings e como capturar dados do usuário com input()."
-tags: ["Python", "programação", "f-strings"]
+tags: ["python", "programação"]
 categories: ["Estudos"]
 ---
 

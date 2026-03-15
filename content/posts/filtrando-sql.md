@@ -3,7 +3,7 @@ title: "SQL: Filtrando Dados com WHERE, AND, OR e IN"
 date: 2025-02-03T15:00:00-03:00
 draft: false
 description: "Aprenda a filtrar resultados em consultas SQL usando WHERE, operadores lógicos e padrões de busca."
-tags: ["SQL"]
+tags: ["sql", "dados"]
 categories: ["Estudos"]
 TocOpen: true
 ---

@@ -3,7 +3,7 @@ title: "Máquinas Criam Valor? Tecnologia, Trabalho e a Ideologia do Capital"
 date: '2025-02-03T23:24:07-03:00'
 draft: false
 description: "A automação e a IA estão tomando o lugar dos trabalhadores e criando valor por conta própria. Mas será que isso é verdade?"
-tags: ["tecnologia", "trabalho", "marxismo", "inteligência artificial"]
+tags: ["tecnologia", "sociedade", "trabalho"]
 categories: ["Reflexões"]
 ---
 

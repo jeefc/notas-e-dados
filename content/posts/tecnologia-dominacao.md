@@ -3,7 +3,7 @@ title: "O Algoritmo Invisível: Tecnologia e Dominação Simbólica"
 date: 2025-02-03T14:00:00-03:00
 draft: false
 description: "Como os algoritmos das grandes plataformas estruturam relações de poder e reforçam desigualdades no ambiente digital."
-tags: ["tecnologia", "sociedade", "algoritmos", "bourdieu"]
+tags: ["tecnologia", "sociedade"]
 categories: ["Reflexões"]
 ---
 

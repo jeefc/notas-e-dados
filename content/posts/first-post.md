@@ -3,6 +3,8 @@ title: "Introdução: Bem-vindo ao Notas e Dados"
 date: 2025-02-03T10:00:00-03:00
 draft: false
 description: "Meu espaço para registrar aprendizados, anotações e projetos em tecnologia e além."
+tags: ["geral"]
+categories: ["Geral"]
 ---
 
 Olá, seja bem-vindo ao **Notas e Dados**!

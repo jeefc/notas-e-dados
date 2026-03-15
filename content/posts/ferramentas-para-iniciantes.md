@@ -3,7 +3,7 @@ title: 'Ferramentas Essenciais para Iniciantes em Análise de Dados'
 date: '2025-02-03T18:21:19-03:00'
 draft: false
 description: "Uma visão geral das principais ferramentas para quem está começando na área de análise de dados."
-tags: ["análise de dados"]
+tags: ["dados"]
 categories: ["Estudos"]
 ---
 
