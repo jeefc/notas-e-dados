@@ -1,25 +1,28 @@
 ---
-title: "Por que decidi criar o Notas e Dados?"
+title: "Por que decidi criar este espaço?"
 date: 2025-02-03T10:00:00-03:00
 draft: false
-description: "Um pouco sobre o motivo de eu ter começado este espaço e o que pretendo compartilhar por aqui."
+description: "Um pouco sobre o motivo de eu ter começado o Notas e Dados e o que pretendo compartilhar por aqui."
 tags: ["geral"]
 categories: ["Geral"]
 ---
 
 Fala pessoal, beleza?
 
-Este é o meu primeiro post por aqui. A ideia de criar o **Notas e Dados** não é inventar a roda ou lançar um grande portal de tecnologia. É ter um espaço para registrar o que vou aprendendo nessa transição entre a TI tradicional e o desenvolvimento de software.
+Este é o meu primeiro post por aqui. A ideia de criar este blog não é inventar a roda ou lançar um grande portal de tecnologia. É ter um espaço, um verdadeiro "caderno aberto", para registrar o que vou aprendendo na minha jornada profissional.
 
-Como mencionei na bio, passei um bom tempo lidando com suporte, redes e infraestrutura. Agora, enquanto curso Computação na UFF, foco em construir sistemas reais com Django e Next.js. Quem trabalha com código sabe: se você não documenta o que resolveu hoje, amanhã já perdeu o raciocínio.
+Como mencionei na página sobre mim, atuo na área de TI corporativa, mas meu foco de estudos atual está em infraestrutura, Cloud e Segurança (DevOps). Entre a preparação para certificações (como AWS e CompTIA) e o desenvolvimento de projetos independentes e Micro-SaaS com ferramentas como Django e Next.js, a quantidade de informação consumida é gigante. 
+
+E quem trabalha com tecnologia sabe: se você não documenta o que resolveu hoje, amanhã já perdeu o raciocínio.
 
 O que pretendo trazer para cá:
-- **Anotações de desenvolvimento:** Resumos práticos de Python, SQL, lógica e IA, focados no que realmente uso nos meus projetos corporativos e de varejo.
-- **Tecnologia além do código:** Reflexões sobre como essas ferramentas moldam o trabalho e a sociedade. Gosto de pensar na tecnologia de um ângulo que vai além do terminal.
+- **Anotações técnicas e estudos:** Resumos práticos sobre Cloud, arquitetura, automação e resolução de problemas no Linux e ecossistemas open-source.
+- **Desenvolvimento e Projetos:** Os bastidores e aprendizados construindo produtos reais e ferramentas independentes.
+- **A tecnologia além da tela:** Reflexões sobre como as ferramentas que criamos esbarram na filosofia, nas relações de trabalho e na sociedade. Gosto de pensar na tecnologia de um ângulo que vai além do código e do terminal, questionando dinâmicas e o impacto social dessas inovações.
 
-O objetivo é documentar o meu próprio caminho. Se algo aqui te ajudar a resolver um problema ou despertar um novo ponto de vista, o esforço de publicar já valeu a pena.
+O objetivo principal é documentar o meu próprio caminho e ter um lugar para simplesmente "cuspir" ideias sem muita fricção. Mas, se algo aqui te ajudar a resolver um problema técnico ou despertar um novo ponto de vista, o esforço de publicar já terá valido a pena.
 
-Valeu por aparecer.
+Seja bem-vindo e valeu pela visita.
 
 Até mais,
 **Jeferson Lica**
