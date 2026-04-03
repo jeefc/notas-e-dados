@@ -1,28 +1,21 @@
 ---
-title: "Por que decidi criar este espaço?"
+title: "O propósito deste espaço"
 date: 2025-02-03T10:00:00-03:00
 draft: false
-description: "Um pouco sobre o motivo de eu ter começado o Notas e Dados e o que pretendo compartilhar por aqui."
+description: "Por que decidi manter um registro público de estudos e projetos."
 tags: ["geral"]
 categories: ["Geral"]
 ---
 
-Fala pessoal, beleza?
+Este espaço funciona como um caderno aberto. O objetivo principal é documentar a minha própria transição e rotina de estudos em TI, especificamente nas áreas de infraestrutura, Cloud e Segurança (DevOps).
 
-Este é o meu primeiro post por aqui. A ideia de criar este blog não é inventar a roda ou lançar um grande portal de tecnologia. É ter um espaço, um verdadeiro "caderno aberto", para registrar o que vou aprendendo na minha jornada profissional.
+Atualmente, atuo no setor corporativo de hospitalidade e divido meu tempo entre a preparação para certificações (AWS, CompTIA) e o desenvolvimento de produtos independentes (Micro-SaaS) usando ecossistemas como Django e Next.js. A quantidade de informação técnica que consumo diariamente é alta, e manter um registro escrito é a melhor forma que encontrei de consolidar esse aprendizado e não perder o raciocínio na semana seguinte.
 
-Como mencionei na página sobre mim, atuo na área de TI corporativa, mas meu foco de estudos atual está em infraestrutura, Cloud e Segurança (DevOps). Entre a preparação para certificações (como AWS e CompTIA) e o desenvolvimento de projetos independentes e Micro-SaaS com ferramentas como Django e Next.js, a quantidade de informação consumida é gigante. 
+O que pretendo registrar aqui:
+- **Anotações técnicas:** Resumos de estudos sobre redes, arquitetura, automação e resolução de problemas no Linux.
+- **Projetos:** Bastidores do desenvolvimento de ferramentas e sistemas reais.
+- **Tecnologia e sociedade:** Reflexões sobre como as ferramentas que construímos impactam as relações de trabalho, a filosofia e a dinâmica social. A tecnologia não é neutra, e gosto de pensar nela além do código e do terminal.
 
-E quem trabalha com tecnologia sabe: se você não documenta o que resolveu hoje, amanhã já perdeu o raciocínio.
+Este blog existe para mim, como ferramenta de consulta futura e organização de ideias. Se algum post acabar sendo útil para outra pessoa que esbarre nele, ótimo. 
 
-O que pretendo trazer para cá:
-- **Anotações técnicas e estudos:** Resumos práticos sobre Cloud, arquitetura, automação e resolução de problemas no Linux e ecossistemas open-source.
-- **Desenvolvimento e Projetos:** Os bastidores e aprendizados construindo produtos reais e ferramentas independentes.
-- **A tecnologia além da tela:** Reflexões sobre como as ferramentas que criamos esbarram na filosofia, nas relações de trabalho e na sociedade. Gosto de pensar na tecnologia de um ângulo que vai além do código e do terminal, questionando dinâmicas e o impacto social dessas inovações.
-
-O objetivo principal é documentar o meu próprio caminho e ter um lugar para simplesmente "cuspir" ideias sem muita fricção. Mas, se algo aqui te ajudar a resolver um problema técnico ou despertar um novo ponto de vista, o esforço de publicar já terá valido a pena.
-
-Seja bem-vindo e valeu pela visita.
-
-Até mais,
-**Jeferson Lica**
+O foco é a informação.
