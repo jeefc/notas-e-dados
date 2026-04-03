@@ -1,17 +1,23 @@
 ---
 title: 'Jeferson Lica'
-description: 'Técnico de TI e estudante de Computação na UFF. Escrevo sobre o desenvolvimento de sistemas reais, dados e tecnologia.'
+description: 'Profissional de TI, focado em Cloud, DevOps e Segurança. Escrevo sobre tecnologia, desenvolvimento e impactos sociais.'
 ---
 
 <img src="/minhafoto.jpg" alt="Jeferson Lica" style="width: 160px; height: 160px; border-radius: 50%; display: block; margin: 0 auto 35px auto; object-fit: cover;">
 
-Comecei na área de TI cedo — manutenção de computadores, lan house, loja de informática. Com o tempo fui migrando para ambientes mais complexos: redes corporativas, VPN, interligação de unidades com antenas Ubiquiti, implantação e treinamento de ERP. Hoje trabalho como técnico de TI no Hotel Fasano Angra dos Reis e estudo Computação pela UFF.
+Comecei na área de TI cedo, passando por manutenção, redes corporativas e implantação de sistemas. Hoje atuo como técnico de TI no setor de hospitalidade (Hotel Fasano). 
 
-No meio disso tudo, comecei a estudar programação de verdade. Atualmente desenvolvo projetos assistidos por IA que já estão em uso: um sistema de RH em Django, um software para o setor de segurança do hotel também em Django, um PDV em Next.js para varejo e projetos com Firebase. Estudo programação, matemática e ferramentas de IA com regularidade — e sinto que quanto mais aprendo, mais clareza tenho sobre o que ainda falta aprender.
+Atualmente, curso DevOps e dedico grande parte do meu tempo a certificações práticas: já possuo a **AWS Cloud Practitioner**, estou estudando para a **AWS Solutions Architect**, e me aprofundando em Cybersecurity visando a **CompTIA Security+**.
 
-Este blog existe para registrar esse caminho. Não é um portal, não é um currículo disfarçado. É um caderno aberto. Tem código, tem dado, e tem texto sobre tecnologia quando ela merece ser pensada além da tela.
+No tempo livre, atuo como desenvolvedor construindo projetos reais e micro-SaaS, utilizando ferramentas como Django, Next.js, FastAPI e ecossistemas open-source (sempre no meu bom e velho Linux).
 
-Se você chegou até aqui por algum motivo parecido com o meu, provavelmente vai encontrar algo útil por aqui.
+### O Blog
+
+Este espaço é meu caderno digital. Não espere um portal de notícias ou um currículo polido. Eu uso este blog para "cuspir" ideias, documentar resoluções de problemas técnicos e registrar meus estudos.
+
+Mas a tecnologia não existe num vácuo. Minhas vivências me fazem questionar constantemente o impacto das ferramentas que criamos. Por isso, entre um post sobre automação e outro sobre configuração de servidores, você provavelmente vai encontrar textos sobre filosofia, dinâmicas de poder, desigualdade e a arquitetura social por trás do software.
+
+Seja bem-vindo.
 
 ## Contato
 **Email:** jefersonlica@id.uff.br

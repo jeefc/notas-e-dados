@@ -30,11 +30,13 @@ params:
   defaultTheme: auto
 
   homeInfoParams:
-    Title: "Oi, eu sou o Jeferson."
+    Title: "Olá. Sou o Jeferson."
     Content: |
-      Desenvolvedor com bagagem técnica em TI. Hoje foco em sistemas reais com Django e Next.js — projetos que já estão rodando em produção — e estudo programação, matemática e IA com regularidade.
+      Trabalho com TI e atualmente exploro o mundo de Cloud, DevOps e Segurança. 
       <br><br>
-      Aqui registro esse processo: código, dados, e de vez em quando tecnologia vista de um ângulo que vai além do técnico.
+      Este blog é meu caderno aberto. Um espaço sem muitas regras onde documento estudos para certificações (AWS, Cybersec), códigos em Django/Next.js e projetos independentes.
+      <br><br>
+      Além dos bits e bytes, escrevo sobre como a tecnologia esbarra na filosofia, nas relações de trabalho e na sociedade — porque a tecnologia nunca é neutra.
       <br><br><br>
       <a href="/posts/first-post/">Por que criei esse espaço? →</a>
 
